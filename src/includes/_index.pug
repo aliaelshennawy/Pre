@@ -1,1 +1,9 @@
-h2 Index Page
+.home-slider__wrapper.swiper-container
+  .swiper-wrapper
+    each i in new Array(5)
+      .swiper-slide(style="background: url(images/content/home-banner.png)")
+        .home-slider-title
+          p Born
+            span To Lead
+          a(href="#") Check Communities
+  .swiper-pagination

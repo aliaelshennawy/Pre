@@ -57,5 +57,7 @@
 			"path": "cz-conventional-changelog"
 		}
 	},
-	"dependencies": {}
+	"dependencies": {
+		"swiper": "^6.1.2"
+	}
 }
