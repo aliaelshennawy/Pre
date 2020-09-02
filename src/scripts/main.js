@@ -1,8 +1,10 @@
 import Swiper from './web_modules/swiper.js';
+import ScrollReveal from './web_modules/scrollreveal.js';
 
 class App {
 	constructor() {
 		this.activateSliders();
+		this.scrollAnimation();
 	}
 
 	activateSliders() {
@@ -25,6 +27,9 @@ class App {
 				},
 			});
 		}
+	}
+	scrollAnimation() {
+		ScrollReveal().reveal('.animate', { delay: 200 });
 	}
 }
 
