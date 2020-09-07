@@ -1,0 +1,20 @@
+.contact-form-wrapper {
+  padding: 130px 0;
+  background-image: url('/images/content/contact-us-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-form-row {
+  display: flex;
+  margin-block-start: 55px;
+  margin-block: 60px;
+  .input-group {
+    width: 230px;
+  }
+  .input-group + .input-group {
+    margin-inline-start: 30px;
+  }
+}
+.form-checkboxes-wrapper {
+  max-width: 800px;
+}

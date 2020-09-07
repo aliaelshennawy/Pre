@@ -89,3 +89,12 @@
 .community-description + .community-description {
 	margin-top: 100px;
 }
+.partners-wrapper {
+	padding-bottom: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.partners-wrapper li + li {
+	margin-inline-start: 100px;
+}

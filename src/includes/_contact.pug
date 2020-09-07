@@ -1,0 +1,30 @@
+.contact-form-wrapper
+  .container
+    h1.heading  Request a Personal Tour
+    form.contact-form(action="")
+      .contact-form-row.form-checkboxes-wrapper
+        .input-group.input-checkbox
+          input(type="checkbox" name="stone-residence" id="stone-residence")
+          label(for="stone-residence") Stone Residence
+        .input-group.input-checkbox
+          input(type="checkbox" name="stone-street" id="stone-street")
+          label(for="stone-street") Stone Street
+        .input-group.input-checkbox
+          input(type="checkbox" name="elhadaba" id="elhadaba")
+          label(for="elhadaba") El-Hadaba
+        .input-group.input-checkbox
+          input(type="checkbox" name="cb" id="cb1")
+          label(for="cb1") Jebal
+      .contact-form-row
+        .input-group.input-feild
+          input(value="" class="form-control" type="text" name="name" id="name" required="required" placeholder="Full Name")
+          label(for="name") Name
+        .input-group.input-feild
+          input(value="" class="form-control" type="text" name="email" id="email" required="required" placeholder="ex@email.com")
+          label(for="email") Email
+        .input-group.input-feild
+          input(value="" class="form-control" type="text" name="phone" id="phone" required="required" placeholder="ex: +20010177159")
+          label(for="email") Phone
+        .input-group.input-feild
+          input(value="" class="form-control" type="text" name="reason" id="reason" required="required" placeholder="Resedential")
+          label(for="email") Reason

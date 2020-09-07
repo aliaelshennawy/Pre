@@ -31,6 +31,9 @@
 @import 'components/home-slider.css';
 @import 'components/about.css';
 @import 'components/titles.css';
+@import 'components/footer.css';
+@import 'components/form.css';
+@import 'components/contact-form.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
