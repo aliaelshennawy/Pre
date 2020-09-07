@@ -1,68 +1,78 @@
 .description {
-  font-family: "Century Gothic", serif;
-  line-height: 26px;
-  font-size: 14px;
-  max-width: 440px;
-  margin: 0;
+	font-family: 'Century Gothic', serif;
+	line-height: 26px;
+	font-size: 14px;
+	max-width: 440px;
+	margin: 0;
 }
+
 .sub-title {
-  font-family: "Playfair", serif;
-  margin-top: 0;
-  font-size: 18px;
-  margin-bottom: 30px;
+	font-family: 'Playfair', serif;
+	margin-top: 0;
+	font-size: 18px;
+	margin-bottom: 30px;
 }
+
 .counter {
-  font-family: "Playfair", serif;
-  font-size: 54px;
+	font-family: 'Playfair', serif;
+	font-size: 54px;
 }
+
 .counter-description {
-  font-family: "Century Gothic", serif;
-  font-size: 22px;
+	font-family: 'Century Gothic', serif;
+	font-size: 22px;
 }
+
 .heading {
-  font-family: "Playfair", serif;
-  font-size: 42px;
-  color: inherit;
-  font-weight: bold;
+	font-family: 'Playfair', serif;
+	font-size: 42px;
+	color: inherit;
+	font-weight: bold;
 }
+
 .heading-secondary {
-  color: inherit;
-  font-family: "Playfair", serif;
-  font-weight: bold;
-  margin: 0;
-  font-size: 22px;
+	color: inherit;
+	font-family: 'Playfair', serif;
+	font-weight: bold;
+	margin: 0;
+	font-size: 22px;
 }
+
 .arrow-link {
-  font-family: 'Century Gothic', serif;
-  font-size: 14px;
-  line-height: 26px;
-  margin: 20px 0;
-  display: inline-block;
-  &--yellow {
-    color: var(--yellow);
-    margin: 10px 0;
-    &:after {
-      content: '';
-      width: 16px;
-      height: 16px; 
-      display: inline-block;
-      background-image: url('/images/background/pattern/arrow-yellow.svg');
-      background-repeat: no-repeat;
-      vertical-align: middle;
-      margin: 0 10px;
-    }
-  }
-  &--white {
-    color: #fff;
-    &:after {
-      content: '';
-      width: 16px;
-      height: 16px; 
-      display: inline-block;
-      background-image: url('/images/background/pattern/arrow-white.svg');
-      background-repeat: no-repeat;
-      vertical-align: middle;
-      margin: 0 10px;
-    }
-  }
+	font-family: 'Century Gothic', serif;
+	font-size: 14px;
+	line-height: 26px;
+	margin: 20px 0;
+	display: inline-block;
+
+	&--yellow {
+		color: var(--yellow);
+		margin: 10px 0;
+
+		&:after {
+			content: '';
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			background-image: url('/images/background/pattern/arrow-yellow.svg');
+			background-repeat: no-repeat;
+			vertical-align: middle;
+			margin: 0 10px;
+		}
+	}
+
+	&--white {
+		color: #fff;
+
+		&:after {
+			content: '';
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			background-image: url('/images/background/pattern/arrow-white.svg');
+			background-repeat: no-repeat;
+			vertical-align: middle;
+			margin: 0 10px;
+		}
+	}
 }

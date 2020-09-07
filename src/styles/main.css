@@ -24,7 +24,7 @@
 @import 'objects/pagination.css';
 
 /* Vendor */
-@import 'swiper/swiper-bundle.css';
+@import 'swiper/swiper-bundle.min.css';
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
 @import 'components/header.css';

@@ -1628,6 +1628,12 @@ var eventsEmitter = {
     data.unshift(context);
     var eventsArray = Array.isArray(events) ? events : events.split(' ');
     eventsArray.forEach(function (event) {
+      if (self.eventsAnyListeners && self.eventsAnyListeners.length) {
+        self.eventsAnyListeners.forEach(function (eventHandler) {
+          eventHandler.apply(context, [event].concat(data));
+        });
+      }
+
       if (self.eventsListeners && self.eventsListeners[event]) {
         var handlers = [];
         self.eventsListeners[event].forEach(function (eventHandler) {
@@ -4193,6 +4199,7 @@ function setBreakpoint() {
       allowSlidePrev: swiper.params.allowSlidePrev
     });
     swiper.currentBreakpoint = breakpoint;
+    swiper.emit('_beforeBreakpoint', breakpointParams);
 
     if (needsReLoop && initialized) {
       swiper.loopDestroy();
@@ -4573,13 +4580,6 @@ var Swiper = /*#__PURE__*/function () {
     swiper.browser = getBrowser();
     swiper.eventsListeners = {};
     swiper.eventsAnyListeners = [];
-    Object.keys(prototypes).forEach(function (prototypeGroup) {
-      Object.keys(prototypes[prototypeGroup]).forEach(function (protoMethod) {
-        if (!Swiper.prototype[protoMethod]) {
-          Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
-        }
-      });
-    });
 
     if (typeof swiper.modules === 'undefined') {
       swiper.modules = {};
@@ -4621,6 +4621,10 @@ var Swiper = /*#__PURE__*/function () {
       Object.keys(swiper.params.on).forEach(function (eventName) {
         swiper.on(eventName, swiper.params.on[eventName]);
       });
+    }
+
+    if (swiper.params && swiper.params.onAny) {
+      swiper.onAny(swiper.params.onAny);
     } // Save Dom lib
 
 
@@ -5050,6 +5054,11 @@ var Swiper = /*#__PURE__*/function () {
   return Swiper;
 }();
 
+Object.keys(prototypes).forEach(function (prototypeGroup) {
+  Object.keys(prototypes[prototypeGroup]).forEach(function (protoMethod) {
+    Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
+  });
+});
 Swiper.use([Resize, Observer$1]);
 
 function _extends$1() { _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
@@ -7994,8 +8003,11 @@ var A11y = {
       swiper.pagination.bullets.each(function (bulletEl) {
         var $bulletEl = $(bulletEl);
         swiper.a11y.makeElFocusable($bulletEl);
-        swiper.a11y.addElRole($bulletEl, 'button');
-        swiper.a11y.addElLabel($bulletEl, params.paginationBulletMessage.replace(/\{\{index\}\}/, $bulletEl.index() + 1));
+
+        if (!swiper.params.pagination.renderBullet) {
+          swiper.a11y.addElRole($bulletEl, 'button');
+          swiper.a11y.addElLabel($bulletEl, params.paginationBulletMessage.replace(/\{\{index\}\}/, $bulletEl.index() + 1));
+        }
       });
     }
   },
@@ -9245,7 +9257,7 @@ var thumbs = {
 };
 
 /**
- * Swiper 6.1.2
+ * Swiper 6.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://swiperjs.com
  *
@@ -9253,7 +9265,7 @@ var thumbs = {
  *
  * Released under the MIT License
  *
- * Released on: August 17, 2020
+ * Released on: September 4, 2020
  */
 
 // Swiper Class
