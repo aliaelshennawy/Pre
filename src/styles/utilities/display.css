@@ -6,3 +6,16 @@
 .hidden {
 	display: none;
 }
+.dark {
+	background-color: #000;
+}
+.light {
+	background-color: #fff;
+}
+.section-padding {
+	padding-block: 80px;
+}
+.header-section-padding {
+	padding-top: 180px;
+	padding-bottom: 80px;
+}

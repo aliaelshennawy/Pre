@@ -1,0 +1,23 @@
+.form-contact-us-wrapper {
+	background-color: #000;
+	padding-block: 80px;
+	width: 65%;
+
+	.col + .col {
+		margin-bottom: 40px;
+	}
+
+	legend {
+		max-width: 500px;
+		margin: 0 auto 55px auto;
+	}
+
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+
+		.input-group {
+			width: 230px;
+		}
+	}
+}

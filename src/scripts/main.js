@@ -11,22 +11,22 @@ class App {
 	activateSliders() {
 		if (document.querySelector('.home-slider__wrapper')) {
 			new Swiper('.home-slider__wrapper', {
-				centeredSlides: true,
-				slidesPerView: 'auto',
+				slidesPerView: '4',
 				touchRatio: 0.2,
+				observer: true,
+				observeParents: true,
 				slideToClickedSlide: true,
 				pagination: {
 					el: '.swiper-pagination',
-					type: 'fraction',
 					clickable: true,
-					renderBullet(index, className) {
-						let number = index + 1;
-						if (number < 10) {
-							number = `0${number}`;
-						}
-						return `<span class="${className}">${number}</span>`;
-					},
 				},
+			});
+		}
+		if (document.querySelector('.news-slider')) {
+			new Swiper('.news-slider', {
+				slidesPerView: 3,
+				loop: false,
+				centerInsufficientSlides: true,
 			});
 		}
 	}

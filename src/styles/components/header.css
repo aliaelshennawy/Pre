@@ -54,15 +54,20 @@
 }
 .header-nav li {
 	position: relative;
+	transition: 0.5s ease-in-out;
 }
 .header-nav li:hover::after {
 	position: absolute;
 	content: '';
 	display: inline-block;
-	background-image: url('/images/content/menu-hover.png');
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	z-index: -1;
+	background-image: url('/images/content/menu-hover.png');
 }
 .header-menu + .header-contact {
 	margin-left: 30px;

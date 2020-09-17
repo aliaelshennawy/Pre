@@ -10,7 +10,7 @@
 	font-family: 'Playfair', serif;
 	margin-top: 0;
 	font-size: 18px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .counter {
@@ -27,6 +27,7 @@
 	font-family: 'Playfair', serif;
 	font-size: 42px;
 	color: inherit;
+	margin: 0;
 	font-weight: bold;
 }
 
@@ -75,4 +76,14 @@
 			margin: 0 10px;
 		}
 	}
+}
+.square-link {
+	color: var(--yellow);
+	border: 1px solid var(--yellow);
+	height: 45px;
+	width: 216px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }

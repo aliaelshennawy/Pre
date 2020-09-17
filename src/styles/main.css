@@ -24,16 +24,23 @@
 @import 'objects/pagination.css';
 
 /* Vendor */
-@import 'swiper/swiper-bundle.min.css';
+@import 'swiper/swiper-bundle.css';
+/* @import 'swiper/components/pagination/pagination.scss'; */
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
 @import 'components/header.css';
 @import 'components/home-slider.css';
 @import 'components/about.css';
 @import 'components/titles.css';
+@import 'components/news-page.css';
 @import 'components/footer.css';
 @import 'components/form.css';
 @import 'components/contact-form.css';
+@import 'components/video-banner.css';
+@import 'components/about-page.css';
+@import 'components/contact-us.css';
+@import 'components/form-banner.css';
+@import 'components/news-section.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';

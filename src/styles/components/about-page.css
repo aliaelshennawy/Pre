@@ -1,0 +1,24 @@
+.about-masterplan-wrapper {
+	background-color: black;
+	padding-block: 80px;
+	background-image: url('/images/background/pattern/about-shape.svg'),
+		url('/images/background/pattern/about-shape.svg');
+	background-size: 98px 98px, 98px 98px;
+	background-position: right top, bottom left;
+	background-repeat: no-repeat, no-repeat;
+}
+
+.about-description:last-child {
+	align-self: flex-end;
+}
+
+.about-master-plan-content img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.about-master-plan-content {
+	display: flex;
+	flex-direction: column;
+}
