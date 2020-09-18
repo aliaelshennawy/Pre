@@ -13,15 +13,9 @@ class App {
 		Swiper.use([Navigation, Pagination]);
 		if (document.querySelector('.home-slider__wrapper')) {
 			new Swiper('.home-slider__wrapper', {
-				slidesPerView: '4',
+				slidesPerView: '1',
 				touchRatio: 0.2,
-				observer: true,
-				observeParents: true,
 				slideToClickedSlide: true,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
 			});
 		}
 		if (document.querySelector('.news-slider')) {
