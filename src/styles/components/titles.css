@@ -38,7 +38,13 @@
 	margin: 0;
 	font-size: 22px;
 }
-
+.heading-small {
+	color: inherit;
+	font-family: 'Playfair', serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+}
 .arrow-link {
 	font-family: 'Century Gothic', serif;
 	font-size: 14px;

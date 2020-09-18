@@ -1,4 +1,5 @@
 import Swiper from './web_modules/swiper.js';
+import { Navigation, Pagination } from './web_modules/swiper.js';
 import ScrollReveal from './web_modules/scrollreveal.js';
 
 class App {
@@ -9,6 +10,7 @@ class App {
 	}
 
 	activateSliders() {
+		Swiper.use([Navigation, Pagination]);
 		if (document.querySelector('.home-slider__wrapper')) {
 			new Swiper('.home-slider__wrapper', {
 				slidesPerView: '4',
@@ -27,6 +29,11 @@ class App {
 				slidesPerView: 3,
 				loop: false,
 				centerInsufficientSlides: true,
+			});
+		}
+		if (document.querySelector('.events-slider')) {
+			new Swiper('.events-slider', {
+				slidesPerView: 'auto',
 			});
 		}
 	}
