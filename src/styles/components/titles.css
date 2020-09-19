@@ -5,7 +5,11 @@
 	max-width: 440px;
 	margin: 0;
 }
-
+.description-small {
+	font-family: 'Century Gothic', serif;
+	line-height: 26px;
+	font-size: 12px;
+}
 .sub-title {
 	font-family: 'Playfair', serif;
 	margin-top: 0;
@@ -92,4 +96,9 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+.category {
+	background-color: var(--yellow);
+	padding: 10px 20px;
+	border-radius: 30px;
 }

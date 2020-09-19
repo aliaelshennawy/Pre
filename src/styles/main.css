@@ -34,6 +34,8 @@
 @import 'components/titles.css';
 @import 'components/news-page.css';
 @import 'components/footer.css';
+@import 'components/grid-banner.css';
+@import 'components/banner.css';
 @import 'components/events-slider.css';
 @import 'components/form.css';
 @import 'components/contact-form.css';

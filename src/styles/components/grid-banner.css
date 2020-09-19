@@ -1,0 +1,23 @@
+.grid-banner-wrapper {
+	img {
+		vertical-align: bottom;
+	}
+
+	.col + .col {
+		margin-left: 15px;
+	}
+
+	.col:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		img {
+			height: calc(50% + 15px);
+		}
+
+		img + img {
+			margin-top: 15px;
+		}
+	}
+}

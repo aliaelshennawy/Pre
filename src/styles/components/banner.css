@@ -1,0 +1,139 @@
+.banner {
+	position: relative;
+	height: 100%;
+	z-index: -1;
+
+	img {
+		vertical-align: bottom;
+	}
+}
+
+.banner-content-wrapper {
+	color: var(--gray);
+	margin-bottom: 80px;
+}
+
+.banner-content {
+	max-width: 800px;
+	padding: 50px 70px;
+	margin-top: -180px;
+	background-color: #fff;
+	color: var(--gray);
+
+	.heading {
+		max-width: 600px;
+		margin-bottom: 50px;
+	}
+
+	.description {
+		max-width: 660px;
+	}
+
+	p + p {
+		margin-top: 20px;
+	}
+}
+
+.banner-details {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.banner-share-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+
+	a {
+		color: var(--yellow);
+	}
+}
+
+.banner-event-details {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+	color: var(--gray);
+
+	li {
+		padding: 40px 30px;
+		border: 1px solid var(--light-gray);
+	}
+
+	span {
+		/* display: block; */
+	}
+}
+
+.calendar::before {
+	content: '';
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	background-image: url('/images/icons/parling.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-inline-end: 10px;
+}
+
+.time::before {
+	content: '';
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	background-image: url('/images/icons/clock.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-inline-end: 10px;
+}
+
+.location::before {
+	content: '';
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	background-image: url('/images/icons/location.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-inline-end: 10px;
+}
+
+.banner-email::before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-image: url('/images/icons/envelope.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-inline-end: 10px;
+}
+
+.banner-share {
+	margin-top: 40px;
+}
+
+.banner-share::before {
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url('/images/icons/share.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-inline-end: 10px;
+}
