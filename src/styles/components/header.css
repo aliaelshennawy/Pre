@@ -3,18 +3,17 @@
 	top: 60px;
 	z-index: 2;
 	width: 100%;
-
-	.logo-wrapper {
-		margin: 0;
-		z-index: 2;
-		width: 100px;
-	}
 }
 
 .header-wrapper {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	.logo-wrapper {
+		margin: 0;
+		z-index: 2;
+		width: 100px;
+	}
 }
 
 .header-menu {
@@ -47,7 +46,9 @@
 	border: 1px solid #fff;
 	transition: ease 0.3s;
 }
-
+.header-fixed .header-menu:after {
+	border: 1px solid var(--blue);
+}
 .header-menu:hover:after {
 	width: 63px;
 	height: 63px;
@@ -71,6 +72,13 @@
 }
 .header-menu + .header-contact {
 	margin-left: 30px;
+}
+
+.header-contact a {
+	color: inherit;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: 'Playfair', serif;
 }
 
 .menu-opened .header-nav {
@@ -113,4 +121,10 @@
 		position: relative;
 		z-index: 2;
 	}
+}
+
+.header-fixed {
+	color: var(--blue);
+	height: 150px;
+	line-height: 150px;
 }

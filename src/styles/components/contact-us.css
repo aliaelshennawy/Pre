@@ -60,6 +60,7 @@ a {
 	font-family: 'Century Gothic', serif;
 	width: 200px;
 	height: 54px;
+	margin-block: 40px;
 	color: var(--yellow);
 	background-color: transparent;
 	border: 1px solid var(--yellow);

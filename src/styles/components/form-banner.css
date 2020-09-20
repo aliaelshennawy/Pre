@@ -19,5 +19,11 @@
 		.input-group {
 			width: 230px;
 		}
+		.input-feild-max-width {
+			width: 100%;
+		}
+		.input-feild.input-feild-max-width::before {
+			width: 84%;
+		}
 	}
 }

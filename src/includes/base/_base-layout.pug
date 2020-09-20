@@ -5,8 +5,14 @@ html.no-js(dir="ltr")
 	include _head
 	body
 		//[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" upgrade your browser to improve your experience.</p>
-		include _header
+		- if (page !== 'unit-details') {
+			include _header
+		- }
+		- if (page === 'unit-details') {
+			include _header-fixed
+		- }
 		block content
-			if(page != events)
-				include _footer
+		- if (page !== 'events') {
+			include _footer
+		- }
 		include _scripts
