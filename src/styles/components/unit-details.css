@@ -13,8 +13,10 @@
 	}
 	.grid-slide {
 		height: 100%;
+		width: 100%;
 		img {
 			height: calc(50% - 10px);
+			object-fit: cover;
 		}
 		img + img {
 			margin-top: 20px;
