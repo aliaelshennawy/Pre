@@ -1,0 +1,23 @@
+.unit-slider-wrapper {
+	.swiper-slide {
+		width: 75%;
+		height: 560px !important;
+		max-height: 560px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		vertical-align: bottom;
+	}
+	.grid-slide {
+		height: 100%;
+		img {
+			height: calc(50% - 10px);
+		}
+		img + img {
+			margin-top: 20px;
+		}
+	}
+}

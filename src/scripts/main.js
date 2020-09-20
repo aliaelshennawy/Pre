@@ -25,6 +25,14 @@ class App {
 				centerInsufficientSlides: true,
 			});
 		}
+		if (document.querySelector('.unit-slider-wrapper')) {
+			new Swiper('.unit-slider-wrapper', {
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				slidesPerGroup: 1,
+				spaceBetween: 20,
+			});
+		}
 		if (document.querySelector('.events-slider')) {
 			new Swiper('.events-slider', {
 				slidesPerView: 'auto',
