@@ -125,6 +125,6 @@
 
 .header-fixed {
 	color: var(--blue);
-	height: 150px;
-	line-height: 150px;
+	height: 100px;
+	line-height: 100px;
 }

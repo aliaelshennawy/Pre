@@ -23,3 +23,15 @@
 		}
 	}
 }
+.unit-details-content .banner-content {
+	position: relative;
+	z-index: 1;
+}
+.unit-details-ammenities.banner-content-wrapper {
+	max-width: 400px;
+}
+.unit-details-ammenities {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

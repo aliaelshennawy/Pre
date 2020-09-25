@@ -38,6 +38,11 @@ class App {
 				slidesPerView: 'auto',
 			});
 		}
+		if (document.querySelector('.community-slider')) {
+			new Swiper('.community-slider', {
+				slidesPerView: 'auto',
+			});
+		}
 	}
 	activateMenu() {
 		const menu = document.querySelector('.header-menu');

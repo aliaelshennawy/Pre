@@ -12,7 +12,7 @@ html.no-js(dir="ltr")
 			include _header-fixed
 		- }
 		block content
-		- if (page !== 'events') {
+		- if (page !== 'events' && page !== 'community' ) {
 			include _footer
 		- }
 		include _scripts
