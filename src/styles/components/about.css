@@ -9,10 +9,19 @@
 
 .about-content-wrapper + .about-content-wrapper {
 	margin-top: 60px;
+	@media (max-width: 768px) {
+		margin-top: 0;
+	}
 }
 
 .about-image-wrapper {
 	display: flex;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		img + img {
+			margin-top: 20px;
+		}
+	}
 }
 
 .counters-wrapper {
@@ -61,6 +70,9 @@
 	object-fit: contain;
 	margin-right: 20px;
 	margin-top: 100px;
+	@media (max-width: 768px) {
+		margin-top: 0;
+	}
 }
 
 .about-image-wrapper img:last-child {

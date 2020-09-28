@@ -2,6 +2,9 @@
 	position: relative;
 	width: 388px;
 	height: 55px;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .input-group label {
@@ -41,6 +44,9 @@
 	width: 150px;
 	height: 1px;
 	background-color: #fff;
+	@media (max-width: 768px) {
+		width: 260px;
+	}
 }
 
 .input-feild-email::before {

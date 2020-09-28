@@ -79,6 +79,9 @@
 	font-size: 28px;
 	font-weight: bold;
 	font-family: 'Playfair', serif;
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 
 .menu-opened .header-nav {
@@ -102,6 +105,13 @@
 	margin-inline: auto;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 768px) {
+		flex-direction: column;
+		justify-content: center;
+		li + li {
+			margin-top: 20px;
+		}
+	}
 }
 
 .header-nav a {
@@ -109,6 +119,9 @@
 	font-weight: bold;
 	color: #fff;
 	font-family: 'Playfair', serif;
+	@media (max-width: 768px) {
+		font-size: 24px;
+	}
 }
 .menu-opened {
 	.header-contact a {

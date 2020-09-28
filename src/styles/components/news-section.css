@@ -3,7 +3,7 @@
 	background-size: 70px 70px;
 	background-position: left top;
 	background-repeat: no-repeat;
-
+	overflow: hidden;
 	.swiper-container {
 		overflow: visible;
 	}
@@ -11,6 +11,9 @@
 	.swiper-slide {
 		display: block;
 		width: 27% !important;
+		@media (max-width: 768px) {
+			width: 90% !important;
+		}
 	}
 
 	.swiper-slide + .swiper-slide {
@@ -40,6 +43,9 @@
 	height: 360px;
 	object-fit: cover;
 	width: auto;
+	@media (max-width: 768px) {
+		height: 340px;
+	}
 }
 
 .news-content-wrapper {
@@ -54,5 +60,8 @@
 
 	.wrapper {
 		padding: 20px 40px;
+	}
+	@media (max-width: 768px) {
+		width: 80%;
 	}
 }

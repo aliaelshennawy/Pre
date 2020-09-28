@@ -23,6 +23,16 @@ class App {
 				slidesPerView: 3,
 				loop: false,
 				centerInsufficientSlides: true,
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 0,
+					},
+					768: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					},
+				},
 			});
 		}
 		if (document.querySelector('.unit-slider-wrapper')) {
