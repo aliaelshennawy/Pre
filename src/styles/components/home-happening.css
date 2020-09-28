@@ -1,0 +1,20 @@
+.home-happening-slider {
+	margin-top: 20px;
+
+	h1 {
+		color: var(--gray);
+		margin-bottom: 0;
+	}
+
+	.events-img-wrapper {
+		margin-top: 40px;
+	}
+
+	.events-content-wrapper {
+		background-color: #fff;
+	}
+
+	.events-date-details {
+		color: var(--gray);
+	}
+}

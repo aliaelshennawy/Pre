@@ -46,6 +46,7 @@
 @import 'components/contact-us.css';
 @import 'components/form-banner.css';
 @import 'components/news-section.css';
+@import 'components/home-happening.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
