@@ -5,6 +5,9 @@
 
 	.col + .col {
 		margin-bottom: 40px;
+		@media (max-width: 768px) {
+			margin-bottom: 0;
+		}
 	}
 
 	legend {
@@ -18,6 +21,9 @@
 
 		.input-group {
 			width: 230px;
+			@media (max-width: 768px) {
+				width: 100%;
+			}
 		}
 		.input-feild-max-width {
 			width: 100%;
@@ -25,5 +31,8 @@
 		.input-feild.input-feild-max-width::before {
 			width: 84%;
 		}
+	}
+	@media (max-width: 768px) {
+		width: 100%;
 	}
 }

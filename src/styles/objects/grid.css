@@ -9,6 +9,9 @@
 }
 .cols {
 	margin-inline: -15px;
+	@media (min-width: 768px) {
+		margin-inline: 0px;
+	}
 	&::before,
 	&::after {
 		content: '';
@@ -17,6 +20,9 @@
 	}
 	& > .col {
 		padding-inline: 15px;
+		@media (min-width: 768px) {
+			padding-inline: 0px;
+		}
 	}
 	&--no-gutter {
 		margin-inline: 0;
