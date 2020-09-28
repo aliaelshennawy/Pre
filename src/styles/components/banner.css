@@ -5,12 +5,21 @@
 
 	img {
 		vertical-align: bottom;
+		@media (max-width: 768px) {
+			height: 300px;
+			object-fit: cover;
+		}
 	}
 }
 
 .banner-content-wrapper {
 	color: var(--gray);
 	margin-bottom: 80px;
+	@media (max-width: 768px) {
+		margin-top: -100px;
+		width: 100%;
+		background-color: #fff;
+	}
 }
 
 .banner-content {
@@ -19,7 +28,10 @@
 	margin-top: -180px;
 	background-color: #fff;
 	color: var(--gray);
-
+	@media (max-width: 768px) {
+		padding: 20px 30px;
+		margin-top: 0px;
+	}
 	.heading {
 		max-width: 600px;
 		margin-bottom: 50px;
@@ -48,6 +60,12 @@
 
 	a {
 		color: var(--yellow);
+	}
+	@media (max-width: 768px) {
+		margin-top: 60px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
 	}
 }
 
@@ -123,6 +141,9 @@
 
 .banner-share {
 	margin-top: 40px;
+	@media (max-width: 768px) {
+		margin-top: 0;
+	}
 }
 
 .banner-share::before {
@@ -136,4 +157,11 @@
 	background-size: contain;
 	vertical-align: middle;
 	margin-inline-end: 10px;
+}
+
+@media (max-width: 768px) {
+	.banner-content-wrapper .cols--5 {
+		display: flex;
+		flex-direction: column;
+	}
 }

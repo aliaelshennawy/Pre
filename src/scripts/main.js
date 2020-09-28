@@ -51,6 +51,16 @@ class App {
 		if (document.querySelector('.community-slider')) {
 			new Swiper('.community-slider', {
 				slidesPerView: 'auto',
+				centeredSlides: true,
+				spaceBetween: 20,
+			});
+		}
+		if (
+			window.matchMedia('(max-width: 767px)').matches &&
+			document.querySelector('.grid-banner-wrapper')
+		) {
+			new Swiper('.grid-banner-wrapper', {
+				slidesPerView: 'auto',
 			});
 		}
 	}

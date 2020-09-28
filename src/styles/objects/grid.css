@@ -74,6 +74,9 @@
 		&--5 {
 			& > .col {
 				width: 20%;
+				@media (max-width: 768px) {
+					width: 100%;
+				}
 			}
 		}
 		&--2 > .col:nth-child(odd) {
@@ -97,6 +100,9 @@
 			}
 			&--two-fifths {
 				width: 60%;
+				@media (max-width: 768px) {
+					width: 100%;
+				}
 			}
 		}
 	}
