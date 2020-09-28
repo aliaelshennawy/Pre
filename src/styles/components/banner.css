@@ -80,10 +80,16 @@
 	li {
 		padding: 40px 30px;
 		border: 1px solid var(--light-gray);
+		span {
+			display: inline-block;
+		}
+		@media (max-width: 768px) {
+			padding: 5px;
+		}
 	}
 
-	span {
-		/* display: block; */
+	@media (max-width: 768px) {
+		flex-direction: row;
 	}
 }
 
