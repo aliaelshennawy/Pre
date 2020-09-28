@@ -1,8 +1,15 @@
 .unit-slider-wrapper {
+	ul {
+		padding: 0;
+	}
 	.swiper-slide {
 		width: 75%;
 		height: 560px !important;
 		max-height: 560px;
+		@media (max-width: 768px) {
+			height: 350px !important;
+			max-height: 350px;
+		}
 	}
 
 	img {
