@@ -94,6 +94,10 @@
 	bottom: 0;
 	width: 60%;
 	padding: 20px 40px;
+	@media (max-width: 768px) {
+		width: 80%;
+		bottom: 40px;
+	}
 }
 
 .community-description:hover {
@@ -116,6 +120,9 @@
 
 .community-description + .community-description {
 	margin-top: 100px;
+	@media (max-width: 768px) {
+		margin-top: 0px;
+	}
 }
 
 .partners-wrapper {

@@ -5,6 +5,12 @@
 
 	.swiper-slide {
 		width: 73% !important;
+		@media (max-width: 768px) {
+			width: 100% !important;
+		}
+	}
+	@media (max-width: 768px) {
+		height: auto;
 	}
 }
 
@@ -51,6 +57,17 @@
 	}
 }
 
+.events-date-details {
+	@media (max-width: 768px) {
+		.sub-title {
+			max-width: 70%;
+		}
+		.description {
+			max-width: 70%;
+		}
+	}
+}
+
 .events-date-details ul {
 	display: flex;
 	align-items: center;
@@ -89,6 +106,9 @@
 			margin: 0%;
 			display: block;
 		}
+		@media (max-width: 768px) {
+			padding: 20px;
+		}
 	}
 }
 
@@ -99,4 +119,9 @@
 .events-img-wrapper img {
 	width: 800px;
 	height: 400px;
+	object-fit: cover;
+	@media (max-width: 768px) {
+		width: 400px;
+		height: 400px;
+	}
 }
