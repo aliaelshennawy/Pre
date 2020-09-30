@@ -1,0 +1,33 @@
+.swiper-pagination-fraction {
+	font-size: 28px;
+}
+
+.swiper-pagination-current {
+	font-size: 43px;
+}
+
+.shop-slider-wrapper {
+	.swiper-pagination-fraction {
+		left: 0;
+		width: auto;
+	}
+
+	.swiper-slide-active {
+		position: static;
+		opacity: 1;
+		height: 100%;
+		width: 100%;
+	}
+
+	.swiper-slide-next {
+		img {
+			position: absolute;
+			left: -20%;
+			top: 50%;
+			height: 270px;
+			object-fit: contain;
+			width: 350px;
+			opacity: 0.6;
+		}
+	}
+}

@@ -2,12 +2,6 @@
 .slide {
 	height: 100vh;
 	width: 100%;
-	.swiper-pagination-fraction {
-		font-size: 28px;
-	}
-	.swiper-pagination-current {
-		font-size: 43px;
-	}
 }
 .scroll-down {
 	position: absolute;

@@ -22,6 +22,15 @@ class App {
 				},
 			});
 		}
+		if (document.querySelector('.shop-slider')) {
+			new Swiper('.shop-slider', {
+				slidesPerView: 'auto',
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+			});
+		}
 		if (document.querySelector('.news-slider')) {
 			new Swiper('.news-slider', {
 				slidesPerView: 3,

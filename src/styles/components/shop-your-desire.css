@@ -1,0 +1,16 @@
+.shop-slider-wrapper {
+	padding: 150px 0 150px 50px;
+	background-image: url('/images/background/pattern/about-shape.svg');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+
+	h1 {
+		margin-bottom: 45px;
+		max-width: 340px;
+		line-height: 58px;
+	}
+
+	p {
+		max-width: 340px;
+	}
+}
