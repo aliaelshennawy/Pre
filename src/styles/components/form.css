@@ -2,6 +2,7 @@
 	position: relative;
 	width: 388px;
 	height: 55px;
+
 	@media (max-width: 768px) {
 		width: 100%;
 	}
@@ -44,6 +45,7 @@
 	width: 150px;
 	height: 1px;
 	background-color: #fff;
+
 	@media (max-width: 768px) {
 		width: 260px;
 	}
@@ -119,8 +121,13 @@
 	}
 
 	label::before {
+		width: 20px;
+		height: 20px;
+		border: 1px solid;
+		left: 0;
+		position: absolute;
 		content: '';
-		border: 1px solid #bdc3c7;
+		display: inline-block;
 	}
 
 	/* Transition */
@@ -159,6 +166,7 @@
 		transform: scale(1);
 	}
 }
+
 @media (max-width: 768px) {
 	.form-banner-wrapper {
 		background-image: none !important;

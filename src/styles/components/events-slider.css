@@ -80,14 +80,17 @@
 }
 
 .swiper-slide-next {
-	.events-date-details p {
-		display: inline;
+	.events-date-details .description {
+		display: none !important;
 	}
 	.events-date-details .sub-title {
 		margin-inline-start: 55px;
 		display: block;
 		margin-block: 0;
 		max-width: 250px;
+	}
+	.events-date-details .arrow-link {
+		display: none !important;
 	}
 	.events-date-details ul {
 		margin: 0;
@@ -110,12 +113,6 @@
 		li:last-child {
 			display: none;
 		}
-	}
-	.description {
-		display: none !important;
-	}
-	.arrow-link {
-		display: none !important;
 	}
 }
 
