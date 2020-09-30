@@ -8,6 +8,13 @@
 	font-style: normal;
 }
 @font-face {
+	font-family: 'Playfair';
+	src: url('../fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
+		url('../fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff'),
+		url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {
 	font-family: 'Century Gothic';
 	src: url('../fonts/CenturyGothic-Regular.woff2') format('woff2'),
 		url('../fonts/CenturyGothic-Regular.woff') format('woff'),

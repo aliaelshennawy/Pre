@@ -60,6 +60,9 @@
 	padding-block: 100px;
 }
 
+.our-communities-wrapper h1 {
+	margin-bottom: 60px;
+}
 .our-communities-wrapper img {
 	width: 460px;
 	object-fit: contain;

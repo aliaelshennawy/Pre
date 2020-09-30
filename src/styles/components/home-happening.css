@@ -5,13 +5,26 @@
 		color: var(--gray);
 		margin-bottom: 0;
 	}
-
+	.swiper-slide {
+		width: 100% !important;
+	}
 	.events-img-wrapper {
 		margin-top: 40px;
 	}
-
+	.events-img-wrapper img {
+		width: 100%;
+		object-fit: cover;
+		height: 516px;
+	}
 	.events-content-wrapper {
 		background-color: #fff;
+	}
+	.swiper-slide-next {
+		.events-content-wrapper {
+			position: absolute;
+			left: -350px;
+			bottom: -180px;
+		}
 	}
 
 	.events-date-details {

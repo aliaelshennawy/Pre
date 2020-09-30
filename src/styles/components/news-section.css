@@ -4,6 +4,9 @@
 	background-position: left top;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	.centered {
+		margin-bottom: 60px;
+	}
 	.swiper-container {
 		overflow: visible;
 	}
@@ -19,11 +22,6 @@
 	.swiper-slide + .swiper-slide {
 		margin-inline-start: 20px;
 	}
-}
-
-.news-wrapper h1 {
-	margin-bottom: 75px;
-	line-height: 43px;
 }
 
 .news-wrapper .sub-title {

@@ -16,6 +16,10 @@ class App {
 				slidesPerView: '1',
 				touchRatio: 0.2,
 				slideToClickedSlide: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
 			});
 		}
 		if (document.querySelector('.news-slider')) {

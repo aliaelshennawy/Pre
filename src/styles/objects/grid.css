@@ -9,7 +9,7 @@
 }
 .cols {
 	margin-inline: -15px;
-	@media (min-width: 768px) {
+	@media (max-width: 768px) {
 		margin-inline: 0px;
 	}
 	&::before,
@@ -20,7 +20,7 @@
 	}
 	& > .col {
 		padding-inline: 15px;
-		@media (min-width: 768px) {
+		@media (max-width: 768px) {
 			padding-inline: 0px;
 		}
 	}
