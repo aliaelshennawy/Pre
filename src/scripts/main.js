@@ -31,6 +31,19 @@ class App {
 				},
 			});
 		}
+		if (document.querySelector('.ammenties-slider')) {
+			new Swiper('.ammenties-slider', {
+				slidesPerView: '1',
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		}
 		if (document.querySelector('.news-slider')) {
 			new Swiper('.news-slider', {
 				slidesPerView: 3,
@@ -59,6 +72,10 @@ class App {
 		if (document.querySelector('.events-slider')) {
 			new Swiper('.events-slider', {
 				slidesPerView: 'auto',
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
 			});
 		}
 		if (document.querySelector('.community-slider')) {
@@ -66,6 +83,10 @@ class App {
 				slidesPerView: 'auto',
 				centeredSlides: true,
 				spaceBetween: 20,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
 			});
 		}
 		if (

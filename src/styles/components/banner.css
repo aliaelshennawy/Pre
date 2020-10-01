@@ -76,10 +76,15 @@
 	padding: 0;
 	flex-direction: column;
 	color: var(--gray);
-
 	li {
+		display: flex;
 		padding: 40px 30px;
+		align-items: center;
 		border: 1px solid var(--light-gray);
+		.description-small {
+			color: #8b9198;
+			margin-bottom: 10px;
+		}
 		span {
 			display: inline-block;
 		}
@@ -87,7 +92,10 @@
 			padding: 5px;
 		}
 	}
-
+	.event-sub-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 	@media (max-width: 768px) {
 		flex-direction: row;
 	}

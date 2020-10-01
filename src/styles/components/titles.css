@@ -101,7 +101,7 @@
 	text-align: center;
 }
 .category {
-	background-color: var(--yellow);
+	background-color: var(--light-yellow);
 	padding: 10px 20px;
 	border-radius: 30px;
 }

@@ -5,7 +5,33 @@
 .swiper-pagination-current {
 	font-size: 43px;
 }
-
+.ammenties-slider {
+	position: relative;
+	.swiper-pagination-fraction {
+		color: var(--light-gray);
+		position: absolute;
+		left: 80%;
+		width: 80px;
+	}
+	.swiper-pagination-current {
+		color: var(--yellow);
+	}
+	.swiper-button-prev {
+		top: 100% !important;
+		background-image: url('/images/icons/prev.svg');
+		background-repeat: no-repeat;
+	}
+	.swiper-button-next {
+		top: 100% !important;
+		left: 60px !important;
+		background-image: url('/images/icons/next.svg');
+		background-repeat: no-repeat;
+	}
+	.swiper-button-next::after,
+	.swiper-button-prev::after {
+		content: '' !important;
+	}
+}
 .shop-slider-wrapper {
 	.swiper-pagination-fraction {
 		left: 0;
@@ -23,7 +49,7 @@
 		img {
 			position: absolute;
 			left: -20%;
-			top: 50%;
+			top: 30%;
 			height: 270px;
 			object-fit: contain;
 			width: 350px;

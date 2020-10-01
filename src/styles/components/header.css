@@ -18,6 +18,7 @@
 
 .header-menu {
 	position: relative;
+	cursor: pointer;
 	span::before {
 		content: 'Menu';
 		display: inline-block;
