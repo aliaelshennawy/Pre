@@ -1,0 +1,107 @@
+.filter-units {
+	list-style: none;
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 60px auto;
+	padding: 0;
+}
+
+.list-view.active:before {
+	content: '';
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	vertical-align: middle;
+	background-image: url('../images/icons/list-view-selected.svg');
+	background-repeat: no-repeat;
+}
+
+.grid-view:before {
+	content: '';
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+	vertical-align: middle;
+	background-image: url('../images/icons/grid-view.svg');
+	background-repeat: no-repeat;
+}
+
+.unit-types-content-wrapper {
+	position: relative;
+}
+
+.unit-types-slider {
+	img {
+		vertical-align: bottom;
+	}
+
+	.swiper-slide {
+		width: 60% !important;
+		margin: 0 auto;
+		transition: all 200ms linear;
+		transform: scale(0.6);
+
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.swiper-slide-active {
+		transform: scale(1);
+	}
+}
+
+.unit-types-content {
+	position: absolute;
+	color: var(--gray);
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	padding: 30px;
+}
+
+.unit-types-list {
+	display: flex;
+	padding: 0;
+	width: 300px;
+	justify-content: space-between;
+	align-items: center;
+	margin-block: 20px;
+
+	.size::before {
+		content: '';
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin-inline-end: 10px;
+		vertical-align: middle;
+		background-size: contain;
+		background-image: url('../images/icons/size.svg');
+	}
+
+	.bathroom::before {
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-inline-end: 10px;
+		vertical-align: middle;
+		background-size: contain;
+		background-image: url('../images/icons/bathrooms.svg');
+	}
+
+	.meters::before {
+		content: '';
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin-inline-end: 10px;
+		vertical-align: middle;
+		background-size: contain;
+		background-image: url('../images/icons/meters.svg');
+	}
+}

@@ -1,5 +1,45 @@
 .ammenties-slider-wrapper {
 	width: 55%;
 	margin-inline-start: 0;
-	margin-bottom: 70px;
+	margin-block: 70px;
+}
+
+.map-details-click {
+	position: relative;
+
+	.show-map {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: #fff;
+		padding: 20px 40px;
+		color: var(--yellow);
+	}
+}
+
+.map-details {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.close-map {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #fff;
+	padding: 20px 40px;
+	color: var(--yellow);
+}
+
+.show-map::before,
+.close-map::before {
+	content: '';
+	width: 30px;
+	vertical-align: middle;
+	height: 30px;
+	margin-inline-end: 10px;
+	display: inline-block;
+	background-image: url('../images/icons/masterplan.svg');
+	background-repeat: no-repeat;
 }

@@ -105,6 +105,17 @@
 	padding: 10px 20px;
 	border-radius: 30px;
 }
+.category-white {
+	background-color: transparent;
+	padding: 10px 20px;
+	border-radius: 30px;
+	color: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.category-white:hover {
+	background-color: var(--yellow);
+}
 .centered {
 	display: flex;
 	align-items: center;

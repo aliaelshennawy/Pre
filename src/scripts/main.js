@@ -7,6 +7,7 @@ class App {
 		this.activateSliders();
 		this.scrollAnimation();
 		this.activateMenu();
+		this.showMap();
 	}
 
 	activateSliders() {
@@ -42,6 +43,15 @@ class App {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
+			});
+		}
+		if (document.querySelector('.unit-types-slider')) {
+			new Swiper('.unit-types-slider', {
+				centeredSlides: true,
+				// spaceBetween: 120,
+				slidesPerView: 'auto',
+				roundLengths: true,
+				loop: true,
 			});
 		}
 		if (document.querySelector('.news-slider')) {
@@ -107,6 +117,20 @@ class App {
 		menu.addEventListener('click', () => {
 			document.body.classList.toggle('menu-opened');
 			nav.classList.toggle('hidden');
+		});
+	}
+	showMap() {
+		const map = document.querySelector('.show-map');
+		const masterClick = document.querySelector('.map-details-click');
+		const masterMap = document.querySelector('.map-details');
+		const masterClose = document.querySelector('.close-map');
+		map.addEventListener('click', () => {
+			masterClick.classList.toggle('hidden');
+			masterMap.classList.toggle('hidden');
+		});
+		masterClose.addEventListener('click', () => {
+			masterClick.classList.remove('hidden');
+			masterMap.classList.add('hidden');
 		});
 	}
 	scrollAnimation() {
