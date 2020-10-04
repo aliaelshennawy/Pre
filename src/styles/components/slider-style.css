@@ -5,7 +5,8 @@
 .swiper-pagination-current {
 	font-size: 43px;
 }
-.ammenties-slider {
+.ammenties-slider,
+.career-banner-slider {
 	position: relative;
 	.swiper-pagination-fraction {
 		color: var(--light-gray);
@@ -17,13 +18,13 @@
 		color: var(--yellow);
 	}
 	.swiper-button-prev {
-		top: 100% !important;
+		top: 100%;
 		background-image: url('/images/icons/prev.svg');
 		background-repeat: no-repeat;
 	}
 	.swiper-button-next {
-		top: 100% !important;
-		left: 60px !important;
+		top: 100%;
+		left: 60px;
 		background-image: url('/images/icons/next.svg');
 		background-repeat: no-repeat;
 	}
@@ -55,5 +56,18 @@
 			width: 350px;
 			opacity: 0.6;
 		}
+	}
+}
+.career-banner-slider {
+	.swiper-pagination-fraction {
+		top: 70%;
+	}
+	.swiper-button-prev {
+		top: 90%;
+		left: 40px;
+	}
+	.swiper-button-next {
+		top: 90%;
+		left: 80px;
 	}
 }

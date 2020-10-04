@@ -52,6 +52,11 @@
 	font-weight: bold;
 	margin: 0;
 }
+.career-title {
+	color: inherit;
+	font-size: 18px;
+	font-weight: bold;
+}
 .arrow-link {
 	font-family: 'Century Gothic', serif;
 	font-size: 14px;

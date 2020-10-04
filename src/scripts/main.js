@@ -54,6 +54,19 @@ class App {
 				loop: true,
 			});
 		}
+		if (document.querySelector('.career-banner-slider')) {
+			new Swiper('.career-banner-slider', {
+				slidesPerView: '1',
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		}
 		if (document.querySelector('.news-slider')) {
 			new Swiper('.news-slider', {
 				slidesPerView: 3,
