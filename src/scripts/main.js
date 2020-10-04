@@ -9,7 +9,7 @@ class App {
 		this.activateMenu();
 		this.languageSwitcher();
 		this.showMap();
-		// this.clickToSlide();
+		this.clickToSlide();
 	}
 	languageSwitcher() {
 		const switchToAr = document.querySelector('.language-switch-ar');
@@ -46,6 +46,7 @@ class App {
 		if (document.querySelector('.shop-slider')) {
 			new Swiper('.shop-slider', {
 				slidesPerView: 'auto',
+				slideToClickedSlide: true,
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'fraction',
@@ -68,6 +69,7 @@ class App {
 		if (document.querySelector('.unit-types-slider')) {
 			new Swiper('.unit-types-slider', {
 				centeredSlides: true,
+				slideToClickedSlide: true,
 				// spaceBetween: 120,
 				slidesPerView: 'auto',
 				roundLengths: true,
@@ -107,6 +109,7 @@ class App {
 		if (document.querySelector('.unit-slider-wrapper')) {
 			new Swiper('.unit-slider-wrapper', {
 				slidesPerView: 'auto',
+				slideToClickedSlide: true,
 				centeredSlides: true,
 				slidesPerGroup: 1,
 				spaceBetween: 20,
@@ -115,6 +118,7 @@ class App {
 		if (document.querySelector('.events-slider')) {
 			new Swiper('.events-slider', {
 				slidesPerView: 'auto',
+				slideToClickedSlide: true,
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'fraction',
@@ -126,6 +130,7 @@ class App {
 				slidesPerView: 'auto',
 				centeredSlides: true,
 				spaceBetween: 20,
+				slideToClickedSlide: true,
 				loop: true,
 				pagination: {
 					el: '.swiper-pagination',
@@ -142,6 +147,14 @@ class App {
 			});
 		}
 	}
+	// clickToSlide() {
+	// 	const slideTo = document.querySelector('.swiper-slide-next');
+	// 	new Swiper('.swiper-container', {
+	// 		slideTo.addEventListener('click', () => {
+	// 			swiper.slideTo(3);
+	// 		});
+	// 	});
+	// }
 	activateMenu() {
 		const menu = document.querySelector('.header-menu');
 		const nav = document.querySelector('.header-nav');
