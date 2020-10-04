@@ -32,6 +32,9 @@
 	justify-content: flex-end;
 	align-items: center;
 	flex-grow: 1;
+	div + div {
+		margin-inline-start: 40px;
+	}
 }
 
 .header-menu:after {

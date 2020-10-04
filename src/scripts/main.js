@@ -7,9 +7,28 @@ class App {
 		this.activateSliders();
 		this.scrollAnimation();
 		this.activateMenu();
+		this.languageSwitcher();
 		this.showMap();
 	}
-
+	languageSwitcher() {
+		const switchToAr = document.querySelector('.language-switch-ar');
+		const switchToEn = document.querySelector('.language-switch-en');
+		const element = document.querySelector('html');
+		switchToAr.addEventListener('click', () => {
+			document.body.className = 'ar';
+			element.setAttribute('dir', 'rtl');
+			element.setAttribute('lang', 'ar');
+			switchToEn.classList.toggle('hidden');
+			switchToAr.classList.add('hidden');
+		});
+		switchToEn.addEventListener('click', () => {
+			document.body.className = 'en';
+			element.setAttribute('dir', 'ltr');
+			element.setAttribute('lang', 'en');
+			switchToAr.classList.toggle('hidden');
+			switchToEn.classList.add('hidden');
+		});
+	}
 	activateSliders() {
 		Swiper.use([Navigation, Pagination]);
 		if (document.querySelector('.home-slider__wrapper')) {
@@ -148,6 +167,10 @@ class App {
 	}
 	scrollAnimation() {
 		ScrollReveal().reveal('.animate', { delay: 200 });
+	}
+	isArabic(text) {
+		const arabic = /[\u0600-\u06FF]/;
+		return arabic.test(text);
 	}
 }
 
