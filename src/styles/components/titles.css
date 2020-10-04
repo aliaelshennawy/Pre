@@ -1,64 +1,68 @@
-:lang(en) {
-	.description {
-		font-family: 'Century Gothic', serif;
-		line-height: 26px;
-		font-size: 14px;
-		max-width: 440px;
-		margin: 0;
-	}
-	.description-small {
-		font-family: 'Century Gothic', serif;
-		line-height: 26px;
-		font-size: 12px;
-	}
-	.sub-title {
-		font-family: 'Playfair', serif;
-		margin-top: 0;
-		font-size: 18px;
-		margin-bottom: 25px;
-	}
+.description {
+	font-family: 'Century Gothic', serif;
+	line-height: 26px;
+	font-size: 14px;
+	max-width: 440px;
+	margin: 0;
+}
 
-	.counter {
-		font-family: 'Playfair', serif;
-		font-size: 54px;
-	}
+.description-small {
+	font-family: 'Century Gothic', serif;
+	line-height: 26px;
+	font-size: 12px;
+}
 
-	.counter-description {
-		font-family: 'Century Gothic', serif;
-		font-size: 22px;
-	}
+.sub-title {
+	font-family: 'Playfair', serif;
+	margin-top: 0;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
 
-	.heading {
-		font-family: 'Playfair', serif;
-		font-size: 42px;
-		color: inherit;
-		margin: 0;
-		font-weight: bold;
-		@media (max-width: 768px) {
-			font-size: 32px;
-		}
-	}
+.counter {
+	font-family: 'Playfair', serif;
+	font-size: 54px;
+}
 
-	.heading-secondary {
-		color: inherit;
-		font-family: 'Playfair', serif;
-		font-weight: bold;
-		margin: 0;
-		font-size: 22px;
-	}
-	.heading-small {
-		color: inherit;
-		font-family: 'Playfair', serif;
-		font-size: 14px;
-		font-weight: bold;
-		margin: 0;
+.counter-description {
+	font-family: 'Century Gothic', serif;
+	font-size: 22px;
+}
+
+.heading {
+	font-family: 'Playfair', serif;
+	font-size: 42px;
+	color: inherit;
+	margin: 0;
+	font-weight: bold;
+
+	@media (max-width: 768px) {
+		font-size: 32px;
 	}
 }
+
+.heading-secondary {
+	color: inherit;
+	font-family: 'Playfair', serif;
+	font-weight: bold;
+	margin: 0;
+	font-size: 22px;
+}
+
+.heading-small {
+	color: inherit;
+	font-family: 'Playfair', serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+}
+
 .career-title {
 	color: inherit;
 	font-size: 18px;
 	font-weight: bold;
 }
+
 .arrow-link {
 	font-family: 'Century Gothic', serif;
 	font-size: 14px;
@@ -97,6 +101,7 @@
 		}
 	}
 }
+
 .square-link {
 	color: var(--yellow);
 	border: 1px solid var(--yellow);
@@ -107,11 +112,13 @@
 	align-items: center;
 	text-align: center;
 }
+
 .category {
 	background-color: var(--light-yellow);
 	padding: 10px 20px;
 	border-radius: 30px;
 }
+
 .category-white {
 	background-color: transparent;
 	padding: 10px 20px;
@@ -120,11 +127,47 @@
 	border: 1px solid #fff;
 	cursor: pointer;
 }
+
 .category-white:hover {
 	background-color: var(--yellow);
 }
+
 .centered {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.corner-borders {
+	height: 45px;
+	width: 216px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--yellow);
+	--b: 1px;
+	/* thickness of the border */
+	--c: var(--yellow);
+	/* color of the border */
+	--w: 10px;
+	border: var(--b) solid transparent;
+	/* space for the border */
+	background: linear-gradient(var(--c), var(--c)) top left,
+		linear-gradient(var(--c), var(--c)) top left,
+		linear-gradient(var(--c), var(--c)) bottom left,
+		linear-gradient(var(--c), var(--c)) bottom left,
+		linear-gradient(var(--c), var(--c)) top right,
+		linear-gradient(var(--c), var(--c)) top right,
+		linear-gradient(var(--c), var(--c)) bottom right,
+		linear-gradient(var(--c), var(--c)) bottom right;
+	background-size: var(--b) var(--w), var(--w) var(--b);
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	transition: 0.5s all ease;
+	cursor: pointer;
+
+	&:hover {
+		--w: 100%;
+	}
 }

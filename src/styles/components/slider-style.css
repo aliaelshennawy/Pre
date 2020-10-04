@@ -5,6 +5,13 @@
 .swiper-pagination-current {
 	font-size: 43px;
 }
+
+.swiper-slide-next {
+	cursor: url('/images/icons/cursor.png'), auto;
+	cursor: -webkit-image-set(url('/images/icons/cursor.png') 1x,
+		url('/images/icons/cursor.png') 2x), auto;
+}
+
 .ammenties-slider,
 .career-banner-slider {
 	position: relative;
@@ -14,25 +21,30 @@
 		left: 80%;
 		width: 80px;
 	}
+
 	.swiper-pagination-current {
 		color: var(--yellow);
 	}
+
 	.swiper-button-prev {
 		top: 100%;
 		background-image: url('/images/icons/prev.svg');
 		background-repeat: no-repeat;
 	}
+
 	.swiper-button-next {
 		top: 100%;
 		left: 60px;
 		background-image: url('/images/icons/next.svg');
 		background-repeat: no-repeat;
 	}
+
 	.swiper-button-next::after,
 	.swiper-button-prev::after {
 		content: '' !important;
 	}
 }
+
 .shop-slider-wrapper {
 	.swiper-pagination-fraction {
 		left: 0;
@@ -55,17 +67,21 @@
 			object-fit: contain;
 			width: 350px;
 			opacity: 0.6;
+
 		}
 	}
 }
+
 .career-banner-slider {
 	.swiper-pagination-fraction {
 		top: 70%;
 	}
+
 	.swiper-button-prev {
 		top: 90%;
 		left: 40px;
 	}
+
 	.swiper-button-next {
 		top: 90%;
 		left: 80px;

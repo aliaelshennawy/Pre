@@ -1,7 +1,41 @@
 .community-slider {
 	background-color: #000;
 	position: relative;
-
+	
+	.swiper-pagination-fraction {
+		left: 40px;
+		width: 80px;
+	}
+	.swiper-slide-prev {
+		.community-slide-content {
+			position: absolute !important;
+			right: -120px;
+			.description {
+				display: none;
+			}
+			h1 {
+				font-size: 40px;
+			}
+			a {
+				display: none;
+			}
+		}
+	}
+	.swiper-slide-next {
+		.community-slide-content {
+			position: absolute !important;
+			left: -120px;
+			.description {
+				display: none;
+			}
+			h1 {
+				font-size: 40px;
+			}
+			a {
+				display: none;
+			}
+		}
+	}
 	ul::after {
 		position: absolute;
 		content: '';

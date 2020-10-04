@@ -9,6 +9,7 @@ class App {
 		this.activateMenu();
 		this.languageSwitcher();
 		this.showMap();
+		// this.clickToSlide();
 	}
 	languageSwitcher() {
 		const switchToAr = document.querySelector('.language-switch-ar');
@@ -125,6 +126,7 @@ class App {
 				slidesPerView: 'auto',
 				centeredSlides: true,
 				spaceBetween: 20,
+				loop: true,
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'fraction',
