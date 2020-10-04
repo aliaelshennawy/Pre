@@ -8,8 +8,8 @@
 
 .swiper-slide-next {
 	cursor: url('/images/icons/cursor.png'), auto;
-	cursor: -webkit-image-set(url('/images/icons/cursor.png') 1x,
-		url('/images/icons/cursor.png') 2x), auto;
+	cursor: -webkit-image-set(url('/images/icons/cursor.png') 1x, url('/images/icons/cursor.png') 2x),
+		auto;
 }
 
 .ammenties-slider,
@@ -67,7 +67,6 @@
 			object-fit: contain;
 			width: 350px;
 			opacity: 0.6;
-
 		}
 	}
 }

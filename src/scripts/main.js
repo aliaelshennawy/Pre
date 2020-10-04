@@ -9,7 +9,6 @@ class App {
 		this.activateMenu();
 		this.languageSwitcher();
 		this.showMap();
-		this.clickToSlide();
 	}
 	languageSwitcher() {
 		const switchToAr = document.querySelector('.language-switch-ar');
@@ -147,14 +146,6 @@ class App {
 			});
 		}
 	}
-	// clickToSlide() {
-	// 	const slideTo = document.querySelector('.swiper-slide-next');
-	// 	new Swiper('.swiper-container', {
-	// 		slideTo.addEventListener('click', () => {
-	// 			swiper.slideTo(3);
-	// 		});
-	// 	});
-	// }
 	activateMenu() {
 		const menu = document.querySelector('.header-menu');
 		const nav = document.querySelector('.header-nav');
@@ -171,14 +162,18 @@ class App {
 		const masterClick = document.querySelector('.map-details-click');
 		const masterMap = document.querySelector('.map-details');
 		const masterClose = document.querySelector('.close-map');
-		map.addEventListener('click', () => {
-			masterClick.classList.toggle('hidden');
-			masterMap.classList.toggle('hidden');
-		});
-		masterClose.addEventListener('click', () => {
-			masterClick.classList.remove('hidden');
-			masterMap.classList.add('hidden');
-		});
+		if (map) {
+			map.addEventListener('click', () => {
+				masterClick.classList.toggle('hidden');
+				masterMap.classList.toggle('hidden');
+			});
+		}
+		if (masterClose) {
+			masterClose.addEventListener('click', () => {
+				masterClick.classList.remove('hidden');
+				masterMap.classList.add('hidden');
+			});
+		}
 	}
 	scrollAnimation() {
 		ScrollReveal().reveal('.animate', { delay: 200 });
