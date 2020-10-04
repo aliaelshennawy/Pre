@@ -6,6 +6,9 @@
 	&--narrow {
 		max-width: 1000px;
 	}
+	@media (max-width: 768px) {
+		padding-inline: 20px;
+	}
 }
 .cols {
 	margin-inline: -15px;

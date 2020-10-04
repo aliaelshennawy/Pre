@@ -11,3 +11,6 @@ body.menu-opened {
 	overflow: hidden;
 	position: relative;
 }
+body.ar {
+	font-family: 'Cairo', serif;
+}

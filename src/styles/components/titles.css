@@ -1,56 +1,58 @@
-.description {
-	font-family: 'Century Gothic', serif;
-	line-height: 26px;
-	font-size: 14px;
-	max-width: 440px;
-	margin: 0;
-}
-.description-small {
-	font-family: 'Century Gothic', serif;
-	line-height: 26px;
-	font-size: 12px;
-}
-.sub-title {
-	font-family: 'Playfair', serif;
-	margin-top: 0;
-	font-size: 18px;
-	margin-bottom: 25px;
-}
-
-.counter {
-	font-family: 'Playfair', serif;
-	font-size: 54px;
-}
-
-.counter-description {
-	font-family: 'Century Gothic', serif;
-	font-size: 22px;
-}
-
-.heading {
-	font-family: 'Playfair', serif;
-	font-size: 42px;
-	color: inherit;
-	margin: 0;
-	font-weight: bold;
-	@media (max-width: 768px) {
-		font-size: 32px;
+:lang(en) {
+	.description {
+		font-family: 'Century Gothic', serif;
+		line-height: 26px;
+		font-size: 14px;
+		max-width: 440px;
+		margin: 0;
 	}
-}
+	.description-small {
+		font-family: 'Century Gothic', serif;
+		line-height: 26px;
+		font-size: 12px;
+	}
+	.sub-title {
+		font-family: 'Playfair', serif;
+		margin-top: 0;
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
 
-.heading-secondary {
-	color: inherit;
-	font-family: 'Playfair', serif;
-	font-weight: bold;
-	margin: 0;
-	font-size: 22px;
-}
-.heading-small {
-	color: inherit;
-	font-family: 'Playfair', serif;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0;
+	.counter {
+		font-family: 'Playfair', serif;
+		font-size: 54px;
+	}
+
+	.counter-description {
+		font-family: 'Century Gothic', serif;
+		font-size: 22px;
+	}
+
+	.heading {
+		font-family: 'Playfair', serif;
+		font-size: 42px;
+		color: inherit;
+		margin: 0;
+		font-weight: bold;
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
+	}
+
+	.heading-secondary {
+		color: inherit;
+		font-family: 'Playfair', serif;
+		font-weight: bold;
+		margin: 0;
+		font-size: 22px;
+	}
+	.heading-small {
+		color: inherit;
+		font-family: 'Playfair', serif;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0;
+	}
 }
 .career-title {
 	color: inherit;
