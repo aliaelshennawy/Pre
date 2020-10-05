@@ -4,6 +4,10 @@
 	background-position: left top;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	.mobile-only {
+		text-align: center;
+		margin: 60px auto 0;
+	}
 	.centered {
 		margin-bottom: 60px;
 	}
@@ -16,6 +20,7 @@
 		width: 27% !important;
 		@media (max-width: 768px) {
 			width: 90% !important;
+			margin-left: 0px;
 		}
 	}
 

@@ -22,6 +22,13 @@
 .counter {
 	font-family: 'Playfair', serif;
 	font-size: 54px;
+	@media (max-width: 768px) {
+		font-size: 28px;
+		display: inline;
+		p {
+			display: flex;
+		}
+	}
 }
 
 .counter-description {
@@ -166,5 +173,15 @@
 
 	&:hover {
 		--w: 100%;
+	}
+}
+.mobile-only {
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+.desktop-only {
+	@media (max-width: 768px) {
+		display: none;
 	}
 }

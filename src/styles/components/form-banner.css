@@ -2,17 +2,30 @@
 	background-color: #000;
 	padding-block: 80px;
 	width: 65%;
-
 	.col + .col {
 		margin-bottom: 40px;
 		@media (max-width: 768px) {
+			margin-top: 50px;
 			margin-bottom: 0;
+		}
+	}
+	.cols--2 + .cols--2 {
+		@media (max-width: 768px) {
+			margin-top: 50px;
+		}
+	}
+	.input-feild-max-width {
+		@media (max-width: 768px) {
+			margin-top: 50px;
 		}
 	}
 
 	legend {
 		max-width: 500px;
 		margin: 0 auto 55px auto;
+		@media (max-width: 768px) {
+			margin-inline-start: 30px;
+		}
 	}
 
 	form {
@@ -30,9 +43,15 @@
 		}
 		.input-feild.input-feild-max-width::before {
 			width: 84%;
+			@media (max-width: 768px) {
+				width: 240px;
+			}
 		}
 	}
 	@media (max-width: 768px) {
 		width: 100%;
+		.button-primary {
+			width: 100%;
+		}
 	}
 }

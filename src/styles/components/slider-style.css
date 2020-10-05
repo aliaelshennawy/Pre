@@ -48,6 +48,7 @@
 .shop-slider-wrapper {
 	.swiper-pagination-fraction {
 		left: 0;
+		bottom: 0;
 		width: auto;
 	}
 
@@ -67,6 +68,11 @@
 			object-fit: contain;
 			width: 350px;
 			opacity: 0.6;
+			@media (max-width: 768px) {
+				width: 150px;
+				top: 90%;
+				left: -15%;
+			}
 		}
 	}
 }
@@ -74,15 +80,26 @@
 .career-banner-slider {
 	.swiper-pagination-fraction {
 		top: 70%;
+		@media (max-width: 768px) {
+			top: auto;
+			bottom: 0;
+			left: 70%;
+		}
 	}
 
 	.swiper-button-prev {
 		top: 90%;
 		left: 40px;
+		@media (max-width: 768px) {
+			top: 100%;
+		}
 	}
 
 	.swiper-button-next {
 		top: 90%;
 		left: 80px;
+		@media (max-width: 768px) {
+			top: 100%;
+		}
 	}
 }

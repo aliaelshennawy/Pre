@@ -1,3 +1,8 @@
+.shop-slider {
+	@media (max-width: 768px) {
+		padding-bottom: 40px;
+	}
+}
 .shop-slider-wrapper {
 	padding: 150px 0 150px 50px;
 	background-image: url('/images/background/pattern/about-shape.svg');
@@ -8,9 +13,21 @@
 		margin-bottom: 45px;
 		max-width: 340px;
 		line-height: 58px;
+		@media (max-width: 768px) {
+			font-size: 34px;
+			line-height: 45px;
+		}
 	}
 
 	p {
 		max-width: 340px;
+	}
+	@media (max-width: 768px) {
+		padding: 70px 0 70px 20px;
+		background-size: 70px 50px;
+		img {
+			margin-block: 40px;
+			width: 75%;
+		}
 	}
 }

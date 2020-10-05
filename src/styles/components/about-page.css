@@ -6,6 +6,9 @@
 	background-size: 98px 98px, 98px 98px;
 	background-position: right top, bottom left;
 	background-repeat: no-repeat, no-repeat;
+	@media (max-width: 768px) {
+		background-size: 78px 78px, 78px 78px;
+	}
 }
 
 .about-description:last-child {

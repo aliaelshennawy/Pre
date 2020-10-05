@@ -5,7 +5,7 @@
 	.heading {
 		color: var(--gray);
 		margin: 0;
-		padding-block-start: 150px;
+		padding-block-start: 50px;
 	}
 	@media (max-width: 768px) {
 		background-image: none !important;
@@ -31,6 +31,11 @@
 
 .contact-info-wrapper {
 	padding-block: 120px;
+	@media (max-width: 768px) {
+		li:last-child {
+			margin-top: 93px;
+		}
+	}
 }
 
 .contact-info-wrapper ul {
