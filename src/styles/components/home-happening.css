@@ -24,6 +24,9 @@
 			position: absolute;
 			left: -350px;
 			bottom: -180px;
+			@media (max-width: 768px) {
+				left: -50px;
+			}
 		}
 	}
 

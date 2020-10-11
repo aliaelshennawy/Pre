@@ -174,4 +174,17 @@
 	.form-banner-wrapper {
 		background-image: none !important;
 	}
+	.contact-form-row.form-checkboxes-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.input-checkbox {
+		flex: 1 50%;
+		min-width: 50%;
+		height: 20px;
+	}
+	.input-group {
+		height: auto;
+	}
 }

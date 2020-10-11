@@ -14,12 +14,16 @@ class App {
 		const switchToAr = document.querySelector('.language-switch-ar');
 		const switchToEn = document.querySelector('.language-switch-en');
 		const element = document.querySelector('html');
+		const allSliders = document.querySelector('.swiper-container');
 		switchToAr.addEventListener('click', () => {
 			document.body.className = 'ar';
 			element.setAttribute('dir', 'rtl');
 			element.setAttribute('lang', 'ar');
 			switchToEn.classList.toggle('hidden');
 			switchToAr.classList.add('hidden');
+			allSliders.setAttribute('dir', 'rtl');
+			this.destroySliders();
+			this.activateSliders();
 		});
 		switchToEn.addEventListener('click', () => {
 			document.body.className = 'en';
@@ -27,7 +31,14 @@ class App {
 			element.setAttribute('lang', 'en');
 			switchToAr.classList.toggle('hidden');
 			switchToEn.classList.add('hidden');
+			allSliders.setAttribute('dir', 'ltr');
+			this.destroySliders();
+			this.activateSliders();
 		});
+	}
+	destroySliders() {
+		var mySwiper = document.querySelector('.swiper-container').swiper;
+		mySwiper.destroy(true, true);
 	}
 	activateSliders() {
 		Swiper.use([Navigation, Pagination]);
@@ -36,6 +47,7 @@ class App {
 				slidesPerView: '1',
 				touchRatio: 0.2,
 				slideToClickedSlide: true,
+				rtl: true,
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'fraction',
@@ -149,6 +161,12 @@ class App {
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'fraction',
+				},
+				breakpoints: {
+					// when window width is >= 320px
+					760: {
+						slidesPerView: '1',
+					},
 				},
 			});
 		}

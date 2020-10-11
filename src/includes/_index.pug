@@ -1,10 +1,11 @@
 .home-slider__wrapper.swiper-container
   .swiper-wrapper
     each i in new Array(5)
-      .swiper-slide(style="background: url(images/content/home-banner.png); background-repeat: no-repeat; background-size: cover;")
-        .home-slider-title
-          p Born
-          span To Lead
-          a.arrow-link.arrow-link--white(href="#") Check Communities
-          a.scroll-down(href="#vision") Scroll Down
+      .swiper-slide
+        .home-background(style="background: url(images/content/home-banner.png); background-repeat: no-repeat; background-size: cover;")
+          .home-slider-title
+            p Born
+            span To Lead
+            a.arrow-link.arrow-link--white(href="#") Check Communities
+            a.scroll-down(href="#vision") Scroll Down
   .swiper-pagination

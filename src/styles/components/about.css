@@ -10,7 +10,7 @@
 .about-content-wrapper + .about-content-wrapper {
 	margin-top: 60px;
 	@media (max-width: 768px) {
-		margin-top: 0;
+		margin-top: 40px;
 	}
 }
 
@@ -85,6 +85,7 @@
 .our-communities-wrapper img {
 	width: 460px;
 	object-fit: contain;
+	vertical-align: middle;
 }
 
 .about-image-wrapper img:first-child {
@@ -107,6 +108,9 @@
 	transition: ease 0.3s;
 	min-height: 580px;
 	max-height: 580px;
+	@media (max-width: 768px) {
+		min-height: auto;
+	}
 }
 
 .community-description-wrapper {
@@ -118,7 +122,7 @@
 	padding: 20px 40px;
 	@media (max-width: 768px) {
 		width: 80%;
-		bottom: 40px;
+		bottom: 0;
 		padding: 20px 30px;
 	}
 }
@@ -143,7 +147,7 @@
 .community-description + .community-description {
 	margin-top: 100px;
 	@media (max-width: 768px) {
-		margin-top: 60px;
+		margin: 40px 0;
 	}
 }
 

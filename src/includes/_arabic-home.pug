@@ -17,7 +17,7 @@ a.scroll-down(href="#vision") انزل لاسفل
 					p.description هدف رؤيتنا إلى تصميم، وبناء مجتمعات مستدامة وحيوية، حيث يتم توظيف جميع المساحات لتوفير أقصى درجات الراحة لإضافة
 				.about-content-wrapper.animate
 					h1.sub-title مهمتنا
-					p.descriptions مهمتنا هي الاستثمار في تطوير مشروعات سكنية وتجارية معاصرة، تعكس كل ما يحتاجه السكان. نحن نعمل على تطوير بيئة مستدامة للحياة، وليس مجرد مشروعات
+					p.description مهمتنا هي الاستثمار في تطوير مشروعات سكنية وتجارية معاصرة، تعكس كل ما يحتاجه السكان. نحن نعمل على تطوير بيئة مستدامة للحياة، وليس مجرد مشروعات
 			.col
 				.about-image-wrapper
 					img.animate(src="images/content/about-1.jpg" alt="Vision")
@@ -98,7 +98,7 @@ section.dark.section-padding.news-wrapper(lang="ar")
 	.container
 		.centered
 			h1.heading.animate الأخبار والتحديثات
-			a.corner-borders(href="#") جميع الأحداث
+			a.corner-borders.desktop-only(href="#") جميع الأحداث
 		.news-slider.swiper-container
 			ul.swiper-wrapper
 				li.swiper-slide.news-img-wrapper
@@ -137,11 +137,12 @@ section.dark.section-padding.news-wrapper(lang="ar")
 							p.sub-title ستون ستريت القاهرة الجديدة يسلم قريبا..
 							p.arrow-link.arrow-link--yellow اقرأ المقال كاملاً
 				li.swiper-slide
+		a.corner-borders.mobile-only(href="#") جميع الأحداث
 section.light.home-happening-slider.section-padding(lang="ar")
 	.container
 		.centered
 			h1.heading يحدث في مجتمعنا
-			a.corner-borders جميع الاحداث
+			a.corner-borders.desktop-only جميع الاحداث
 		.events-slider.swiper-container
 			ul.swiper-wrapper
 				li.swiper-slide
@@ -204,6 +205,7 @@ section.light.home-happening-slider.section-padding(lang="ar")
 								p.sub-title إفتتاح ستون ستريت مع عمرو دياب والمزيد
 								p.description الرسالة ، التي كتبها اتحاد الصناعات الإبداعية (CIF) والموجهة لتمويل المنظمات الإبداعية والمهنيين
 								p.arrow-link.arrow-link--yellow تفاصيل الحدث
+		a.corner-borders.mobile-only(href="#") جميع الأحداث
 .contact-form-wrapper(lang="ar")
 	.container
 		h1.heading  اطلب جولة شخصية
