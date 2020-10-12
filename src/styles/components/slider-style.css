@@ -8,8 +8,9 @@
 
 .swiper-slide-next {
 	cursor: url('/images/icons/cursor.png'), auto;
-	cursor: -webkit-image-set(url('/images/icons/cursor.png') 1x, url('/images/icons/cursor.png') 2x),
-		auto;
+	cursor: -webkit-image-set
+		(url('/images/icons/cursor.png') 1x,
+		url('/images/icons/cursor.png') 2x), auto;
 }
 
 .ammenties-slider,
@@ -103,6 +104,19 @@
 		left: 80px;
 		@media (max-width: 768px) {
 			top: 100%;
+		}
+	}
+}
+
+.home-slider__wrapper {
+	.swiper-slide-next {
+		cursor: url('/images/icons/cursor.png'), auto;
+		cursor: -webkit-image-set(url('/images/icons/cursor.png') 1x, url('/images/icons/cursor.png') 2x),
+			auto;
+		.home-slider-title-wrapper {
+			position: absolute;
+			left: -200px;
+			padding: 140px 80px;
 		}
 	}
 }

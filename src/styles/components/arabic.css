@@ -1,3 +1,6 @@
+*:lang('ar') {
+	direction: rtl;
+}
 [dir='rtl'] {
 	.heading {
 		font-family: 'Cairo', serif;
