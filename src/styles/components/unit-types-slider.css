@@ -43,6 +43,10 @@
 		margin: 0 auto;
 		transition: all 200ms linear;
 		transform: scale(0.6);
+		@media (max-width: 768px) {
+			width: 100% !important;
+			transform: scale(1);
+		}
 
 		img {
 			height: 100%;
@@ -62,6 +66,9 @@
 	left: 0;
 	background: #fff;
 	padding: 30px;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .unit-types-list {

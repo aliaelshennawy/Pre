@@ -34,7 +34,12 @@
 		padding-inline: 30px;
 	}
 }
-
+.counters-wrapper p {
+	@media (max-width: 768px) {
+		display: flex;
+		align-items: center;
+	}
+}
 .counters-wrapper p + p {
 	margin-inline-start: 130px;
 	@media (max-width: 768px) {
@@ -91,10 +96,10 @@
 .about-image-wrapper img:first-child {
 	width: 240px;
 	object-fit: contain;
-	margin-right: 20px;
+	margin-inline-end: 20px;
 	margin-top: 100px;
 	@media (max-width: 768px) {
-		margin-top: 0;
+		margin-top: 20px;
 	}
 }
 

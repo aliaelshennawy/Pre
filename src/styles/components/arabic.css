@@ -58,10 +58,6 @@
 		transform: scaleX(-1);
 	}
 
-	.events-date-details ul li:last-child {
-		margin: 0 20px;
-	}
-
 	.arrow-link--white:after {
 		transform: scaleX(-1);
 	}

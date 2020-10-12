@@ -2,6 +2,9 @@
 	width: 55%;
 	margin-inline-start: 0;
 	margin-block: 70px;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .map-details-click {

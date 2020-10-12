@@ -20,6 +20,9 @@
 		position: absolute;
 		left: 80%;
 		width: 80px;
+		@media (max-width: 768px) {
+			left: 75%;
+		}
 	}
 
 	.swiper-pagination-current {
