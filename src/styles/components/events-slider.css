@@ -147,7 +147,7 @@
 		}
 
 		.arrow-link {
-			margin: 0%;
+			margin: 40px 0;
 			display: block;
 		}
 		@media (max-width: 768px) {

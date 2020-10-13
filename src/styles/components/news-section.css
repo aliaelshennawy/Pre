@@ -1,8 +1,9 @@
 .news-wrapper {
-	background-image: url('/images/background/pattern/small-square.svg');
-	background-size: 70px 70px;
-	background-position: left top;
-	background-repeat: no-repeat;
+	background-image: url('/images/background/pattern/small-square.svg'),
+		url('/images/background/pattern/small-square.svg');
+	background-size: 70px 70px, 70px 70px;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
 	overflow: hidden;
 	.mobile-only {
 		text-align: center;
