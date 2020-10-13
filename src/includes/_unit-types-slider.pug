@@ -1,12 +1,24 @@
 section.dark.section-padding.unit-details-section
   h1.align-center.heading Unit Types
-  ul.filter-units
+  ul.filter-units.desktop-only
     li.category-white All Types
     li.category-white Villas 
     li.category-white Twin House
     li.category-white Apartments
-    span.list-view.active
-    span.grid-view
+    li.toggle-view-wrapper
+      span.list-view.active
+      span.grid-view
+  div.filter-units.mobile-only
+      .filter-units-item
+        .category-white All Types
+        .category-white Villas 
+      .filter-units-item
+        .category-white Twin House
+        .category-white Apartments
+      .filter-units-item
+        .toggle-view-wrapper
+          span.list-view.active
+          span.grid-view
   .unit-types-slider.swiper-container
     ul.list.swiper-wrapper
       li.swiper-slide
@@ -53,7 +65,7 @@ section.dark.section-padding.unit-details-section
               li.bathroom 2
               li.meters 130 sq2
             a(href="#").arrow-link.arrow-link--yellow Explore Type details
-  .unit-types-slider-grid.container.container--narrow.section-padding.hidden
+  .unit-types-slider-grid.container.container--narrow.section-padding.hidden.desktop-only
     .cols.cols--2
       .col
         .unit-types-content-wrapper

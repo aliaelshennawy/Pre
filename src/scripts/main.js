@@ -92,6 +92,17 @@ class App {
 				},
 			});
 		}
+		if (
+			window.matchMedia('(max-width: 767px)').matches &&
+			document.querySelector('.grid-banner-wrapper-slider')
+		) {
+			new Swiper('.grid-banner-wrapper-slider', {
+				slidesPerView: 'auto',
+				loop: 'true',
+				spaceBetween: 20,
+				centeredSlides: true,
+			});
+		}
 		if (document.querySelector('.unit-types-slider')) {
 			new Swiper('.unit-types-slider', {
 				centeredSlides: true,
@@ -169,14 +180,6 @@ class App {
 						slidesPerView: '1',
 					},
 				},
-			});
-		}
-		if (
-			window.matchMedia('(max-width: 767px)').matches &&
-			document.querySelector('.grid-banner-wrapper')
-		) {
-			new Swiper('.grid-banner-wrapper', {
-				slidesPerView: 'auto',
 			});
 		}
 	}
