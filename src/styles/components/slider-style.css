@@ -15,11 +15,13 @@
 .ammenties-slider,
 .career-banner-slider {
 	position: relative;
+
 	.swiper-pagination-fraction {
 		color: var(--light-gray);
 		position: absolute;
 		left: 80%;
 		width: 80px;
+
 		@media (max-width: 768px) {
 			left: 75%;
 		}
@@ -73,6 +75,7 @@
 			opacity: 0.6;
 			padding: 20px;
 			border: 1px solid #ededed;
+
 			@media (max-width: 768px) {
 				width: 150px;
 				top: 90%;
@@ -85,6 +88,7 @@
 .career-banner-slider {
 	.swiper-pagination-fraction {
 		top: 70%;
+
 		@media (max-width: 768px) {
 			top: auto;
 			bottom: 0;
@@ -95,6 +99,7 @@
 	.swiper-button-prev {
 		top: 90%;
 		left: 40px;
+
 		@media (max-width: 768px) {
 			top: 100%;
 		}
@@ -103,6 +108,7 @@
 	.swiper-button-next {
 		top: 90%;
 		left: 80px;
+
 		@media (max-width: 768px) {
 			top: 100%;
 		}
@@ -111,6 +117,10 @@
 
 .home-slider__wrapper {
 	.swiper-slide-next {
+		a {
+			display: none;
+		}
+
 		.home-slider-title-wrapper {
 			position: absolute;
 			left: -200px;
