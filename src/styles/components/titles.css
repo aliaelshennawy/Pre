@@ -188,3 +188,18 @@
 p {
 	cursor: default;
 }
+.visit-link {
+	color: var(--yellow);
+	font-family: 'Playfair', serif;
+	font-size: 18px;
+	&::before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 30px;
+		margin-inline-end: 10px;
+		background-repeat: no-repeat;
+		background-image: url('../images/icons/down-arrow.svg');
+	}
+}

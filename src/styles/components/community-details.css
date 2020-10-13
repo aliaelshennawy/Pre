@@ -1,20 +1,43 @@
+.swiper-slide-bk-wrapper {
+	height: 100vh;
+	background-size: cover;
+}
 .community-banner-wrapper {
 	.video-banner-wrapper {
-		height: 70vh;
-		background-size: cover;
+		margin-bottom: 80vh;
+		background-size: cover !important;
 	}
-
-	.download {
+	.video-banner-content {
+		height: 100%;
+		top: 85%;
 		position: absolute;
-		left: calc(60vw + 55px);
-		bottom: -60px;
-		border: 1px solid var(--yellow);
-		height: 60px;
-		display: inline-block;
-		width: 400px;
-		line-height: 60px;
-		color: var(--yellow);
-		text-align: center;
+		.download {
+			position: absolute;
+			top: 94px;
+			right: -235px;
+			bottom: -60px;
+			border: 1px solid var(--yellow);
+			height: 60px;
+			display: inline-block;
+			width: 400px;
+			line-height: 60px;
+			color: var(--yellow);
+			text-align: center;
+			cursor: pointer;
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				margin-inline-end: 10px;
+				width: 30px;
+				height: 30px;
+				background-size: contain;
+				background-image: url('../images/icons/download-porchure.svg');
+			}
+		}
+	}
+	.heading {
+		margin-block: 40px;
 	}
 }
 .flex-centered {

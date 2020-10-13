@@ -76,6 +76,10 @@
 		right: 0;
 	}
 
+	.about-master-plan-content img {
+		transform: scaleX(-1);
+	}
+
 	.shop-slider-wrapper .swiper-slide-next img {
 		right: -15%;
 		left: auto;
@@ -85,7 +89,17 @@
 		right: 0;
 		left: auto;
 	}
-
+	.community-slide-content {
+		text-align: center;
+	}
+	.community-slider .swiper-slide-next .community-slide-content {
+		right: -120px;
+		left: auto;
+	}
+	.community-slider .swiper-slide-prev .community-slide-content {
+		left: -120px;
+		right: auto;
+	}
 	.home-slider__wrapper .swiper-slide-next .home-slider-title-wrapper {
 		right: -200px;
 	}
