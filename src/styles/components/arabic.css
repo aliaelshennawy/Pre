@@ -72,7 +72,8 @@
 	.scroll-down {
 		z-index: 1;
 		left: auto;
-		right: 80%;
+		font-family: 'Cairo', serif;
+		right: 0;
 	}
 
 	.shop-slider-wrapper .swiper-slide-next img {
@@ -81,7 +82,7 @@
 	}
 
 	.shop-slider-wrapper .swiper-pagination-fraction {
-		right: 90%;
+		right: 0;
 		left: auto;
 	}
 
