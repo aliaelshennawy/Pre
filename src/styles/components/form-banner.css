@@ -1,5 +1,9 @@
 .form-contact-us-wrapper {
 	background-color: #000;
+	background-image: url('/images/background/pattern/about-shape.svg');
+	background-size: 98px 98px;
+	background-position: right top;
+	background-repeat: no-repeat;
 	padding-block: 80px;
 	width: 65%;
 	.col + .col {
@@ -33,10 +37,14 @@
 		margin: 0 auto;
 
 		.input-group {
-			width: 230px;
+			width: 100%;
 			@media (max-width: 768px) {
 				width: 100%;
 			}
+		}
+		.button-primary {
+			display: block;
+			float: inline-end;
 		}
 		.input-feild-max-width {
 			width: 100%;

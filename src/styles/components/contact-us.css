@@ -1,5 +1,4 @@
 .conact-us-wrapper {
-	height: 100vh;
 	background-color: #fff;
 
 	.heading {
@@ -15,7 +14,7 @@
 
 .contact-map-wrapper {
 	background-color: #fff;
-	padding: 70px 70px 70px 0;
+	padding: 70px 70px 0 0;
 	width: 65%;
 
 	img {
