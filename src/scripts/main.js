@@ -9,6 +9,7 @@ class App {
 		this.activateMenu();
 		this.languageSwitcher();
 		this.showMap();
+		this.toggleListView();
 	}
 	languageSwitcher() {
 		const switchToAr = document.querySelector('.language-switch-ar');
@@ -176,6 +177,24 @@ class App {
 		) {
 			new Swiper('.grid-banner-wrapper', {
 				slidesPerView: 'auto',
+			});
+		}
+	}
+	toggleListView() {
+		const toggleToGridView = document.querySelector('.grid-view');
+		const toggleToListView = document.querySelector('.list-view');
+		const gridView = document.querySelector('.unit-types-slider-grid');
+		const listView = document.querySelector('.unit-types-slider');
+		if (toggleToGridView) {
+			toggleToGridView.addEventListener('click', () => {
+				gridView.classList.remove('hidden');
+				listView.classList.add('hidden');
+			});
+		}
+		if (toggleToListView) {
+			toggleToListView.addEventListener('click', () => {
+				gridView.classList.add('hidden');
+				listView.classList.remove('hidden');
 			});
 		}
 	}

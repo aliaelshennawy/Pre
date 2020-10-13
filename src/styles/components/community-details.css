@@ -7,6 +7,10 @@
 		margin-bottom: 80vh;
 		background-size: cover !important;
 	}
+	.play-video-link {
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
 	.video-banner-content {
 		height: 100%;
 		top: 85%;
