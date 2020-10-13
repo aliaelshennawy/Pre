@@ -17,6 +17,11 @@
 	ul {
 		list-style: none;
 		padding: 0;
+		@media (max-width: 768px) {
+			width: 90%;
+			padding: 30px 30px 60px 30px;
+			background-color: #fff;
+		}
 	}
 
 	li {
@@ -24,7 +29,7 @@
 		color: var(--gray);
 		padding: 50px;
 		@media (max-width: 768px) {
-			padding: 30px;
+			padding: 0;
 		}
 	}
 
@@ -64,6 +69,11 @@
 	li {
 		color: var(--gray);
 	}
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 20px;
+	}
 }
 
 .career-lists:last-child {
@@ -80,6 +90,12 @@
 
 	ul {
 		padding: 0;
+		@media (max-width: 768px) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
 	}
 
 	li {
@@ -97,5 +113,9 @@
 
 	li + li {
 		margin-top: 40px;
+		@media (max-width: 768px) {
+			margin-top: 0;
+			margin-top: 20px;
+		}
 	}
 }
