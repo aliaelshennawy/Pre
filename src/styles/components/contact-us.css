@@ -1,6 +1,6 @@
 .conact-us-wrapper {
 	background-color: #fff;
-
+	background-position: right !important;
 	.heading {
 		color: var(--gray);
 		margin: 0;

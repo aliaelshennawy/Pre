@@ -50,6 +50,9 @@
 			position: absolute;
 			top: 90%;
 			font-size: 18px;
+			@media (max-width: 768px) {
+				right: 30px;
+			}
 		}
 		.description {
 			@media (max-width: 768px) {

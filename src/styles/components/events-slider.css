@@ -1,6 +1,7 @@
 .events-slider-wrapper {
 	position: relative;
 	background-color: #000;
+	padding-inline-start: 80px;
 
 	.swiper-slide {
 		width: 73% !important;
@@ -10,6 +11,14 @@
 	}
 	@media (max-width: 768px) {
 		height: auto;
+		padding-inline-start: 30px;
+		.swiper-slide-next {
+			.events-content-wrapper {
+				left: -15%;
+				bottom: -240px;
+				position: absolute;
+			}
+		}
 	}
 }
 

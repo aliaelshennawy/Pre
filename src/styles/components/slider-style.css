@@ -87,6 +87,16 @@
 	}
 }
 
+.events-slider-wrapper {
+	.swiper-pagination-fraction {
+		bottom: 80px !important;
+	}
+	.events-content-wrapper .arrow-link {
+		margin-bottom: 0;
+		margin-top: 40px;
+	}
+}
+
 .career-banner-slider {
 	.swiper-pagination-fraction {
 		top: 70%;

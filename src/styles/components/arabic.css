@@ -114,6 +114,9 @@
 		left: 0;
 	}
 
+	.conact-us-wrapper {
+		background-position: left !important;
+	}
 	@media (max-width: 768px) {
 		.shop-slider-wrapper .swiper-pagination-fraction {
 			right: 75%;
