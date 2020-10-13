@@ -109,15 +109,13 @@
 }
 
 .community-description {
-	position: relative;
-	transition: ease 0.3s;
 	min-height: 580px;
+	transition: ease 0.3s;
 	max-height: 580px;
 	@media (max-width: 768px) {
 		min-height: auto;
 	}
 }
-
 .community-description-wrapper {
 	background-color: #fff;
 	position: absolute;
@@ -131,10 +129,12 @@
 		padding: 20px 30px;
 	}
 }
+.community-description-img-wrapper {
+	position: relative;
+}
 .community-description:hover {
 	border: 1px solid var(--yellow);
 	padding: 20px;
-
 	.community-description-wrapper {
 		background-color: var(--yellow);
 		color: #fff;
