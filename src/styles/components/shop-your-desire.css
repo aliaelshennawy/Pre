@@ -49,6 +49,7 @@
 	.swiper-slide-active {
 		.heading,
 		p {
+			position: relative;
 			animation: fadeIn 0.5s ease-in;
 		}
 
@@ -61,10 +62,12 @@
 
 @keyframes fadeIn {
 	0% {
+		top: 50px;
 		opacity: 0;
 	}
 
 	100% {
+		top: 0;
 		opacity: 1;
 	}
 }

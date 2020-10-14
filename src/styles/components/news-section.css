@@ -61,7 +61,13 @@
 	padding: 0;
 	background-color: #fff;
 	margin-top: -110px;
-
+	.sub-title {
+		font-family: 'Playfair', serif;
+		font-weight: bold;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
 	.wrapper {
 		padding: 20px 40px;
 	}

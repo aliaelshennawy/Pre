@@ -1,5 +1,8 @@
 .news-banner-wrapper {
 	position: relative;
+	.news-img-wrapper .sub-titlte {
+		font-size: 28px;
+	}
 }
 
 .news-banner-wrapper::before {

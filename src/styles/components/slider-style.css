@@ -128,18 +128,34 @@
 }
 
 .home-slider__wrapper {
+	line-height: 40px;
 	.swiper-slide-next {
+		p {
+			font-size: 40px;
+		}
+		span {
+			font-size: 40px;
+		}
 		a {
 			display: none;
 		}
 
 		.home-slider-title-wrapper {
 			position: absolute;
-			left: -200px;
+			left: -150px;
 			padding: 140px 80px;
+			line-height: 20px;
 			@media (max-width: 768px) {
 				position: static;
 			}
+		}
+	}
+	.swiper-slide-active {
+		p,
+		span,
+		.arrow-link {
+			position: relative;
+			animation: fadeIn 0.5s ease-in;
 		}
 	}
 }
