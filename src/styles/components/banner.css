@@ -5,6 +5,8 @@
 
 	img {
 		vertical-align: bottom;
+		width: 100%;
+		object-fit: cover;
 		@media (max-width: 768px) {
 			height: 300px;
 			object-fit: cover;
@@ -93,6 +95,9 @@
 		@media (max-width: 768px) {
 			padding: 5px;
 		}
+	}
+	li + li {
+		border-top: none;
 	}
 	.event-sub-wrapper {
 		display: flex;

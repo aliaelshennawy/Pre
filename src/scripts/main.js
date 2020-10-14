@@ -192,12 +192,16 @@ class App {
 			toggleToGridView.addEventListener('click', () => {
 				gridView.classList.remove('hidden');
 				listView.classList.add('hidden');
+				toggleToListView.classList.remove('active');
+				toggleToGridView.classList.add('active');
 			});
 		}
 		if (toggleToListView) {
 			toggleToListView.addEventListener('click', () => {
 				gridView.classList.add('hidden');
 				listView.classList.remove('hidden');
+				toggleToListView.classList.add('active');
+				toggleToGridView.classList.remove('active');
 			});
 		}
 	}

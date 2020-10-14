@@ -21,7 +21,18 @@
 	width: 33px;
 	height: 33px;
 	vertical-align: middle;
+	background-size: contain;
 	background-image: url('../images/icons/list-view-selected.svg');
+	background-repeat: no-repeat;
+}
+.list-view:before {
+	content: '';
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	vertical-align: middle;
+	background-size: contain;
+	background-image: url('../images/icons/list-view.svg');
 	background-repeat: no-repeat;
 }
 
@@ -149,6 +160,16 @@
 		display: flex;
 		justify-content: baseline;
 	}
+}
+.grid-view.active:before {
+	content: '';
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+	vertical-align: middle;
+	background-image: url('../images/icons/grid-view-selected.svg');
+	background-repeat: no-repeat;
 }
 .grid-view:before {
 	content: '';

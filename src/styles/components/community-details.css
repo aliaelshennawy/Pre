@@ -4,7 +4,7 @@
 }
 .community-banner-wrapper {
 	.video-banner-wrapper {
-		margin-bottom: 80vh;
+		margin-bottom: 0;
 		@media (max-width: 768px) {
 			margin-bottom: 60vh;
 		}
@@ -14,12 +14,11 @@
 		transform: translate(-50%, -50%);
 	}
 	.video-banner-content {
-		height: 100%;
-		top: 85%;
-		position: absolute;
+		position: relative;
+		margin-top: -100px;
 		.download {
 			position: absolute;
-			top: 94px;
+			top: 100px;
 			right: -235px;
 			bottom: -60px;
 			border: 1px solid var(--yellow);

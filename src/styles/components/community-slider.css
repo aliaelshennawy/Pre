@@ -44,6 +44,7 @@
 			color: var(--yellow);
 			display: inline-block;
 			margin-block: 20px;
+			z-index: 1;
 		}
 		.request-tour {
 			color: #fff;
