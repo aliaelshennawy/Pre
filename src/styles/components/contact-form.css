@@ -3,6 +3,11 @@
 	background-image: url('/images/content/contact-us-banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	.button-primary {
+		width: 100px;
+		margin-block: 0;
+		margin-inline-start: 30px;
+	}
 	@media (max-width: 768px) {
 		padding: 120px 0 40px 0;
 	}

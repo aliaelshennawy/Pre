@@ -49,6 +49,9 @@ class App {
 				touchRatio: 0.2,
 				slideToClickedSlide: true,
 				rtl: true,
+				fadeEffect: {
+					crossFade: true,
+				},
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'fraction',

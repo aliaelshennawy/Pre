@@ -1,32 +1,120 @@
-.banner
-  img(src="images/content/events-banner.jpg")
-section.container
-  .banner-content-wrapper 
-    .cols.cols--no-gutter.cols--5
+.events-page-wrapper
+  .banner
+    img(src="images/content/events-banner.jpg")
+  section.container
+    .banner-content-wrapper 
+      .cols.cols--no-gutter.cols--5
+        .col
+          .banner-share-wrapper
+            a.banner-email(href="") Email this
+            a.banner-share(href="") Share this
+        .col.col--two-fifths
+          .banner-content
+            .banner-details
+              p.date 1 March 2020
+              p.category Arts & Culture
+            h1.heading New Years Eve in Stone Residence with Tamer Hosny
+            p.description Stone Residence encompasses 142 blocks, embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience. Embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience.
+            p.description Stone Residence encompasses 142 blocks, embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience.
+            p.description Embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience.
+        .col
+          ul.banner-event-details
+            li.calendar
+              .event-sub-wrapper
+                span.description-small Date 
+                span.heading-small 18 jan 2020
+            li.time
+              .event-sub-wrapper
+                span.description-small Time
+                span.heading-small 8 pm - 12 pm
+            li.location
+              .event-sub-wrapper
+                span.description-small Location
+                span.heading-small Downtown, Newcairo
+  section.container.section-padding.light.desktop-only
+    .cols.cols--no-gutter.cols--3.equal-height.grid-banner-wrapper
       .col
-        .banner-share-wrapper
-          a.banner-email(href="") Email this
-          a.banner-share(href="") Share this
-      .col.col--two-fifths
-        .banner-content
-          .banner-details
-            p.date 1 March 2020
-            p.category Arts & Culture
-          h1.heading New Years Eve in Stone Residence with Tamer Hosny
-          p.description Stone Residence encompasses 142 blocks, embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience. Embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience.
-          p.description Stone Residence encompasses 142 blocks, embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience.
-          p.description Embracing 462 buildings; each building consists of eight apartments with flexible spaces. Stone Residence highlights freedom through all aspects to create the finest living experience.
+        img(src="../images/content/event-grid.jpg")
       .col
-        ul.banner-event-details
-          li.calendar
-            .event-sub-wrapper
-              span.description-small Date 
-              span.heading-small 18 jan 2020
-          li.time
-            .event-sub-wrapper
-              span.description-small Time
-              span.heading-small 8 pm - 12 pm
-          li.location
-            .event-sub-wrapper
-              span.description-small Location
-              span.heading-small Downtown, Newcairo
+        img(src="../images/content/event-grid-1.jpg")
+        img(src="../images/content/event-grid-2.jpg")
+      .col
+        img(src="../images/content/event-grid-3.jpg")
+  section.section-padding.light.mobile-only
+    .grid-banner-wrapper-slider.swiper-container
+      .equal-height.swiper-wrapper
+        .swiper-slide
+          img(src="../images/content/event-grid.jpg")
+        .swiper-slide
+          img(src="../images/content/event-grid-1.jpg")
+          img(src="../images/content/event-grid-2.jpg")
+        .swiper-slide
+          img(src="../images/content/event-grid-3.jpg")
+  .dark
+    .centered.container
+      h1.heading.animate Related Events
+      a.corner-borders.desktop-only(href="/events.html") Check events
+  section.events-slider-wrapper.dark
+    .events-slider.swiper-container
+      ul.swiper-wrapper
+        li.swiper-slide
+          .events-img-wrapper
+            img(src="../images/content/events-1.jpg")
+            .events-content-wrapper
+              .events-date-details
+                ul.list
+                  li.heading-small 01 
+                  li.description Arts & Culture
+                  li.heading-small 1 .  Mar . 2020
+                p.sub-title Stone Street grand opening with Amr Diab
+                p.description The letter, which is written by Creative Industries Federation (CIF) and addressed to fuand professionals…
+                p.arrow-link.arrow-link--yellow Explore event details			
+        li.swiper-slide
+          .events-img-wrapper
+            img(src="../images/content/events-1.jpg")
+            .events-content-wrapper
+              .events-date-details
+                ul.list
+                  li.heading-small 02
+                  li.description Arts & Culture
+                  li.heading-small 1 .  Mar . 2020
+                p.sub-title Stone Street grand opening with Amr Diab
+                p.description The letter, which is written by Creative Industries Federation (CIF) and addressed to fuand professionals…
+                p.arrow-link.arrow-link--yellow Explore event details
+        li.swiper-slide
+          .events-img-wrapper
+            img(src="../images/content/events-1.jpg")
+            .events-content-wrapper
+              .events-date-details
+                ul.list
+                  li.heading-small 03
+                  li.description Arts & Culture
+                  li.heading-small 1 .  Mar . 2020
+                p.sub-title Stone Street grand opening with Amr Diab
+                p.description The letter, which is written by Creative Industries Federation (CIF) and addressed to fuand professionals…
+                p.arrow-link.arrow-link--yellow Explore event details
+        li.swiper-slide
+          .events-img-wrapper
+            img(src="../images/content/events-1.jpg")
+            .events-content-wrapper
+              .events-date-details
+                ul.list
+                  li.heading-small 04
+                  li.description Arts & Culture
+                  li.heading-small 1 .  Mar . 2020
+                p.sub-title Stone Street grand opening with Amr Diab
+                p.description The letter, which is written by Creative Industries Federation (CIF) and addressed to fuand professionals…
+                p.arrow-link.arrow-link--yellow Explore event details
+        li.swiper-slide
+          .events-img-wrapper
+            img(src="../images/content/events-1.jpg")
+            .events-content-wrapper
+              .events-date-details
+                ul.list
+                  li.heading-small 05
+                  li.description Arts & Culture
+                  li.heading-small 1 .  Mar . 2020
+                p.sub-title Stone Street grand opening with Amr Diab
+                p.description The letter, which is written by Creative Industries Federation (CIF) and addressed to fuand professionals…
+                p.arrow-link.arrow-link--yellow Explore event details
+      .swiper-pagination

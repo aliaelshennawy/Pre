@@ -1,3 +1,14 @@
+.events-img-wrapper {
+	margin-top: 140px;
+}
+.events-page-wrapper {
+	.events-img-wrapper {
+		margin-top: 0;
+	}
+	.centered {
+		padding-block: 80px;
+	}
+}
 .events-slider-wrapper {
 	position: relative;
 	background-color: #000;
@@ -133,17 +144,6 @@
 	}
 }
 
-/* .events-date-details {
-	@media (max-width: 768px) {
-		.sub-title {
-			max-width: 70%;
-		}
-		.description {
-			max-width: 70%;
-		}
-	}
-} */
-
 .swiper-slide-active {
 	.events-content-wrapper {
 		margin-top: -190px;
@@ -165,10 +165,6 @@
 			padding: 20px;
 		}
 	}
-}
-
-.events-img-wrapper {
-	margin-top: 140px;
 }
 
 .events-img-wrapper img {
