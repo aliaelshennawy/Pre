@@ -84,6 +84,7 @@
 a {
 	color: var(--gray);
 	max-width: 235px;
+	line-height: 28px;
 }
 
 .button-primary {
