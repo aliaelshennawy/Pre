@@ -1,6 +1,6 @@
 .thankyou-wrapper {
-	background-color: #000;
-	background-image: url('/images/content/Thankyou-banner.jpg'),
+	background-color: #000c17;
+	background-image: url('../images/content/Thankyou-banner.jpg'),
 		url('/images/background/pattern/about-shape.svg');
 	background-size: 50%, 98px 98px;
 	background-position: left, right bottom;
@@ -9,9 +9,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	@media (max-width: 768px) {
+		background-size: 100%, 98px 98px;
+		align-items: flex-end;
+		background-position: top;
+	}
 	.heading {
 		font-size: 83px;
+		@media (max-width: 768px) {
+			font-size: 34px;
+		}
 	}
 
 	.thankyou-content {
@@ -19,7 +26,7 @@
 		flex-direction: column;
 		justify-content: center;
 		color: #fff;
-		background-color: #000;
+		background-color: #000c17;
 		padding: 40px;
 
 		.description {

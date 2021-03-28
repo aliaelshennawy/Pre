@@ -11,7 +11,7 @@
 }
 .events-slider-wrapper {
 	position: relative;
-	background-color: #000;
+	background-color: #000c17;
 	padding-inline-start: 80px;
 
 	.swiper-slide {
@@ -39,7 +39,7 @@
 	display: inline-block;
 	width: 80px;
 	height: 80px;
-	background-image: url('/images/background/pattern/about-shape.svg');
+	background-image: url('../images/background/pattern/about-shape.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	left: 0;
@@ -56,7 +56,7 @@
 .events-content-wrapper {
 	width: 450px;
 	transition: all 0.3s ease-in-out;
-	background-color: #000;
+	background-color: #000c17;
 	color: #fff;
 	position: relative;
 	z-index: 1;
@@ -126,7 +126,7 @@
 		}
 		li:first-child:after {
 			content: '';
-			background-image: url('/images/icons/Line-next.svg');
+			background-image: url('../images/icons/Line-next.svg');
 			display: inline-block;
 			vertical-align: middle;
 			margin-inline: 5px 20px;

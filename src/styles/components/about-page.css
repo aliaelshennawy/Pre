@@ -1,8 +1,8 @@
 .about-masterplan-wrapper {
 	background-color: black;
 	padding-block: 80px;
-	background-image: url('/images/background/pattern/about-shape.svg'),
-		url('/images/background/pattern/about-shape.svg');
+	background-image: url('../images/background/pattern/about-shape.svg'),
+		url('assets/images/background/pattern/about-shape.svg');
 	background-size: 98px 98px, 98px 98px;
 	background-position: right top, bottom left;
 	background-repeat: no-repeat, no-repeat;

@@ -12,7 +12,7 @@
 	.logo-wrapper {
 		margin: 0;
 		z-index: 2;
-		width: 100px;
+		width: 120px;
 	}
 }
 
@@ -30,8 +30,30 @@
 	color: var(--blue);
 	height: 100px;
 	line-height: 100px;
+	top: 0;
+	background-color: #fff;
+	@media (max-width: 768px) {
+		color: #fff;
+		top: 0;
+		span {
+			color: var(--blue);
+		}
+	}
 }
-
+@media (max-width: 768px) {
+	.menu-opened .header-fixed {
+		line-height: 60px;
+		top: -30px;
+	}
+}
+@media (min-width: 768px) {
+	.desktop-only {
+		display: block;
+	}
+	.menu-opened .mobile-only {
+		display: none;
+	}
+}
 .header-contact-wrapper {
 	display: flex;
 	justify-content: flex-end;
@@ -88,7 +110,7 @@
 	width: 400px;
 	height: 400px;
 	z-index: -1;
-	background-image: url('/images/content/menu-hover.png');
+	background-image: url('../images/content/menu-hover.png');
 }
 .header-menu + .header-contact {
 	margin-inline-end: 30px;
@@ -106,13 +128,15 @@
 		display: none;
 	}
 }
-
+.wpml-ls-current-language span {
+	display: none;
+}
 .menu-opened .header-nav {
 	display: flex;
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background-color: #000;
+	background-color: #000c17;
 	top: 0;
 	left: 0;
 	span {
@@ -163,4 +187,8 @@
 		position: relative;
 		z-index: 2;
 	}
+}
+.wpml-ls-link {
+	font-family: Cairo, serif;
+	color: #fff;
 }

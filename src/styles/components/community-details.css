@@ -64,7 +64,7 @@
 }
 
 .unique-location {
-	background-image: url('/images/background/pattern/small-square.svg');
+	background-image: url('../images/background/pattern/small-square.svg');
 	background-repeat: no-repeat;
 	background-position: top left;
 

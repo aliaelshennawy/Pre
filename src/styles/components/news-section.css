@@ -1,5 +1,5 @@
 .news-wrapper {
-	background-image: url('/images/background/pattern/small-square.svg'),
+	background-image: url('../images/background/pattern/small-square.svg'),
 		url('/images/background/pattern/small-square.svg');
 	background-size: 70px 70px, 70px 70px;
 	background-position: left top, right bottom;
@@ -46,7 +46,7 @@
 .news-img-wrapper img {
 	height: 360px;
 	object-fit: cover;
-	width: auto;
+	width: 100%;
 	@media (max-width: 768px) {
 		height: 340px;
 	}

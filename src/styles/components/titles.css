@@ -86,7 +86,7 @@
 			width: 16px;
 			height: 16px;
 			display: inline-block;
-			background-image: url('/images/background/pattern/arrow-yellow.svg');
+			background-image: url('../images/background/pattern/arrow-yellow.svg');
 			background-repeat: no-repeat;
 			vertical-align: middle;
 			margin: 0 10px;
@@ -101,7 +101,7 @@
 			width: 16px;
 			height: 16px;
 			display: inline-block;
-			background-image: url('/images/background/pattern/arrow-white.svg');
+			background-image: url('../images/background/pattern/arrow-white.svg');
 			background-repeat: no-repeat;
 			vertical-align: middle;
 			margin: 0 10px;

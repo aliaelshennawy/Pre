@@ -17,7 +17,7 @@
 		content: '';
 		display: inline-block;
 		margin-right: 40px;
-		background-image: url('/images/icons/scrolldown.svg');
+		background-image: url('../images/icons/scrolldown.svg');
 		width: 20px;
 		vertical-align: middle;
 		height: 80px;

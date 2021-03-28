@@ -61,7 +61,7 @@
 	left: -30%;
 	top: 50%;
 	transform: translateY(-50%);
-	background-image: url('/images/icons/dark-squares.svg');
+	background-image: url('../images/icons/dark-squares.svg');
 	@media (max-width: 768px) {
 		width: 100px;
 		height: 100px;

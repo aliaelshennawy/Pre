@@ -113,7 +113,7 @@
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-	background-image: url('/images/icons/parling.svg');
+	background-image: url('../images/icons/parling.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -126,7 +126,7 @@
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-	background-image: url('/images/icons/clock.svg');
+	background-image: url('../images/icons/clock.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -139,7 +139,7 @@
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-	background-image: url('/images/icons/location.svg');
+	background-image: url('../images/icons/location.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -152,7 +152,7 @@
 	display: inline-block;
 	width: 28px;
 	height: 28px;
-	background-image: url('/images/icons/envelope.svg');
+	background-image: url('../images/icons/envelope.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -172,7 +172,7 @@
 	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background-image: url('/images/icons/share.svg');
+	background-image: url('../images/icons/share.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;

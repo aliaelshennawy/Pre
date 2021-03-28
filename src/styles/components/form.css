@@ -35,7 +35,9 @@
 	height: 1px;
 	background-color: #fff;
 }
-
+.contact-form-row p {
+	margin: 0;
+}
 .input-feild::before {
 	content: ' ';
 	display: inline-block;
@@ -89,7 +91,7 @@
 	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
-	background-image: url('/images/icons/send.svg');
+	background-image: url('../images/icons/send.svg');
 }
 
 .input-group input::placeholder {
@@ -97,14 +99,7 @@
 	font-family: 'Century Gothic', serif;
 	padding-inline-start: 15px;
 }
-
 .input-checkbox {
-	input[type='checkbox'] {
-		position: absolute;
-		opacity: 0;
-		z-index: -1;
-	}
-
 	label {
 		position: relative;
 		display: inline-block;
@@ -148,7 +143,7 @@
 		-ms-transform: scale(0);
 		-o-transform: scale(0);
 		transform: scale(0);
-		background-image: url('/images/icons/mark.svg');
+		background-image: url('../images/icons/mark.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-color: var(--yellow);

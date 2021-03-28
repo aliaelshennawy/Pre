@@ -1,7 +1,7 @@
 .about-wrapper {
 	padding-block: 80px;
-	background-color: #000;
-	background-image: url('/images/background/pattern/about-shape.svg');
+	background-color: #000c17;
+	background-image: url('../images/background/pattern/about-shape.svg');
 	background-size: 98px 98px;
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -25,13 +25,14 @@
 }
 
 .counters-wrapper {
-	background-color: #000;
+	background-color: #000c17;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-block: 80px;
 	@media (max-width: 768px) {
 		padding-inline: 30px;
+		flex-direction: column;
 	}
 }
 .counters-wrapper p {
@@ -62,7 +63,7 @@
 	top: 50%;
 	left: 40%;
 	transform: translate(-50%, -40%);
-	background-image: url('/images/background/pattern/squares.svg');
+	background-image: url('../images/background/pattern/squares.svg');
 	background-repeat: no-repeat;
 	@media (max-width: 768px) {
 		margin-top: 0;
@@ -144,7 +145,7 @@
 		}
 
 		.arrow-link--yellow::after {
-			background-image: url('/images/background/pattern/arrow-white.svg');
+			background-image: url('../images/background/pattern/arrow-white.svg');
 		}
 	}
 }

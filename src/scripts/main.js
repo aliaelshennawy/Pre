@@ -87,7 +87,7 @@ class App {
 				slidesPerView: '1',
 				pagination: {
 					el: '.swiper-pagination',
-					type: 'fraction',
+					clickable: true,
 				},
 				navigation: {
 					nextEl: '.swiper-button-next',
