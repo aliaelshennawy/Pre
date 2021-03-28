@@ -16,26 +16,30 @@ class App {
 		const switchToEn = document.querySelector('.language-switch-en');
 		const element = document.querySelector('html');
 		const allSliders = document.querySelector('.swiper-container');
-		switchToAr.addEventListener('click', () => {
-			document.body.className = 'ar';
-			element.setAttribute('dir', 'rtl');
-			element.setAttribute('lang', 'ar');
-			switchToEn.classList.toggle('hidden');
-			switchToAr.classList.add('hidden');
-			allSliders.setAttribute('dir', 'rtl');
-			this.destroySliders();
-			this.activateSliders();
-		});
-		switchToEn.addEventListener('click', () => {
-			document.body.className = 'en';
-			element.setAttribute('dir', 'ltr');
-			element.setAttribute('lang', 'en');
-			switchToAr.classList.toggle('hidden');
-			switchToEn.classList.add('hidden');
-			allSliders.setAttribute('dir', 'ltr');
-			this.destroySliders();
-			this.activateSliders();
-		});
+		if (switchToAr) {
+			switchToAr.addEventListener('click', () => {
+				document.body.className = 'ar';
+				element.setAttribute('dir', 'rtl');
+				element.setAttribute('lang', 'ar');
+				switchToEn.classList.toggle('hidden');
+				switchToAr.classList.add('hidden');
+				allSliders.setAttribute('dir', 'rtl');
+				this.destroySliders();
+				this.activateSliders();
+			});
+		}
+		if (switchToEn) {
+			switchToEn.addEventListener('click', () => {
+				document.body.className = 'en';
+				element.setAttribute('dir', 'ltr');
+				element.setAttribute('lang', 'en');
+				switchToAr.classList.toggle('hidden');
+				switchToEn.classList.add('hidden');
+				allSliders.setAttribute('dir', 'ltr');
+				this.destroySliders();
+				this.activateSliders();
+			});
+		}
 	}
 	destroySliders() {
 		var mySwiper = document.querySelector('.swiper-container').swiper;
