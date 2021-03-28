@@ -3,6 +3,7 @@
 	position: relative;
 	margin-bottom: 30vh;
 	background-color: #fff;
+	background-repeat: no-repeat !important;
 	@media (max-width: 768px) {
 		height: 120vh;
 		background-repeat: no-repeat !important;
